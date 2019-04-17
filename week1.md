@@ -18,6 +18,9 @@ PS: 因为id可能被其他业务依赖，如此会导致问题，所以MYSQL不
 
 3. 方案三：ON DUPLICATE KEY UPDATE
 
-* referece
+> referece
+
 http://blog.sae.sina.com.cn/archives/3491
+
 http://www.mysqltutorial.org/mysql-insert-or-update-on-duplicate-key-update/
+
