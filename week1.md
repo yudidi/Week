@@ -6,7 +6,8 @@ Algorithm、Review、Tip、Share 简称ARTS
 4.分享一篇有观点和思考的技术文章
 
 # Tip
-** MySql避免重复插入记录方法(ignore,Replace,ON DUPLICATE KEY UPDATE) **
+**MySql避免重复插入记录方法(ignore,Replace,ON DUPLICATE KEY UPDATE)**
+
 1. 案一：使用ignore关键字
 如果是用主键primary或者唯一索引unique区分了记录的唯一性,避免重复插入记录可以使用：
 
