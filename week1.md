@@ -55,3 +55,11 @@ http://blog.sae.sina.com.cn/archives/3491
 
 http://www.mysqltutorial.org/mysql-insert-or-update-on-duplicate-key-update/
 
+
+# Share
+Using Service Objects in Go: https://itnext.io/using-service-objects-in-go-d899dc599335
+* 主题：好像是说，这么写的代码符合SRP单一职责原则，能够更好对应对需求变化。 TODO 没有get到，但是感觉很吊，有6赞
+
+> 从CODE REVIEW 谈如何做技术 : https://coolshell.cn/articles/11432.html
+
+
