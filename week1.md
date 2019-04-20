@@ -7,6 +7,7 @@ Algorithm、Review、Tip、Share 简称ARTS
 
 # Algorithm
 https://leetcode.com/problems/move-zeroes/
+
 代码占篇幅，就不贴了，在leetcode网站可查。主要记思路。
 
 ## 如何想到的
