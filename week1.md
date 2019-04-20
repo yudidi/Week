@@ -5,6 +5,42 @@ Algorithm、Review、Tip、Share 简称ARTS
 3.学习至少一个技术技巧
 4.分享一篇有观点和思考的技术文章
 
+# Algorithm
+https://leetcode.com/problems/move-zeroes/
+
+```
+/*
+[01,02,1]-[02,01,1]-[02,1,01]
+
+*/
+func moveZeroes(nums []int)  {
+    n := len(nums)
+    for i:= 0;i< n-1;i++{ // [0,n-2] (n-1) times  // i<2
+        
+        for j:=0;j<n-1-i;j++ { // j: [0,j] is not handled. 
+            
+            if nums[j] == 0 && nums[j+1] != 0{ // j<2 
+                nums[j],nums[j+1] =  nums[j+1],nums[j] 
+            }
+        }
+    }
+    fmt.Println(nums)
+}
+```
+# 如何想到的
+1. 举例子，进行试运行 [01,02,1]-[02,01,1]-[02,1,01]
+2. 发现和冒泡的思路有点类似，
+冒泡：每趟把max冒泡至末尾，然后再对剩余对数组继续冒泡，这样冒泡n-1躺，就可以完成升序排序。  由于是顺次交换，所以是稳定排序。
+借鉴：每次把1个0冒泡至末尾，然后对剩余数组的0进行冒泡，这样冒泡n-1躺，就可以把所有0放在最后。顺次交换，稳定排序。
+
+# 再次检查题目限制条件
+要求稳定排序。满足
+
+* 扩展：交换和稳定性的关系
+稳定排序：顺次交换
+不稳定排序：交换
+
+
 # Tip
 **MySql避免重复插入记录方法(ignore,Replace,ON DUPLICATE KEY UPDATE)**
 
