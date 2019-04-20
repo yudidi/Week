@@ -29,7 +29,12 @@ https://leetcode.com/problems/move-zeroes/
 TODO: 看一下leecode上别人更好的解法
 
 # Review
-
+https://blog.golang.org/using-go-modules
+主题：GO官网的一篇指导Gopher使用go-moudles的教程类技术文章。(Go 1.11+)
+阅读目的：学习写作教程类文章的写作思路，常用词汇
+点评：
+1. 首先给出整个文章的写作概要，便于读者迅速把我主题内容和行文思路。
+2. 结合实例进行讲解。注意每一步关键点，都有讲解，确实是娓娓道来，对新手非常友好。
 
 # Tip
 **MySql避免重复插入记录方法(ignore,Replace,ON DUPLICATE KEY UPDATE)**
