@@ -7,26 +7,8 @@ Algorithm、Review、Tip、Share 简称ARTS
 
 # Algorithm
 https://leetcode.com/problems/move-zeroes/
+代码占篇幅，就不贴了，在leetcode网站可查。主要记思路。
 
-```
-/*
-[01,02,1]-[02,01,1]-[02,1,01]
-
-*/
-func moveZeroes(nums []int)  {
-    n := len(nums)
-    for i:= 0;i< n-1;i++{ // [0,n-2] (n-1) times  // i<2
-        
-        for j:=0;j<n-1-i;j++ { // j: [0,j] is not handled. 
-            
-            if nums[j] == 0 && nums[j+1] != 0{ // j<2 
-                nums[j],nums[j+1] =  nums[j+1],nums[j] 
-            }
-        }
-    }
-    fmt.Println(nums)
-}
-```
 ## 如何想到的
 1. 举例子，进行试运行 [01,02,1]-[02,01,1]-[02,1,01]
 2. 发现和冒泡的思路有点类似，
