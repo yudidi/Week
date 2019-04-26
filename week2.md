@@ -5,7 +5,9 @@ Algorithm、Review、Tip、Share 简称ARTS
 # Algorithm
 https://leetcode.com/problems/move-zeroes/
 在上周代码基础上进行优化。
-
+上一次主要是运用的冒泡排序的思路，每趟都把一个0冒泡到末尾，然后下一个趟再对剩余数组进行冒泡。主要是交换0和非0元素。
+本周采用一个全新的思路。
+思路的发现，参考一个博客。
 
 # Review
 
