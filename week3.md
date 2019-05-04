@@ -4,13 +4,48 @@ Algorithm、Review、Tip、Share 简称ARTS
 
 TODO
 改善包含数据库操作的测试流程，引入必要的测试。
-
 因为测试对业务最熟悉，可以考虑需求阶段或编码阶段，向测试多请教，给出最基本的测试情况。
+使用GO module，GOProxy
 
-使用GO module
-GOProxy
+# Algorithm
+
+https://leetcode.com/problems/two-sum/
+
+** 方法1: 暴力求解 **
+
+* 怎么想到的
+2层循环罗列所有情况(i,j)匹配的情况，逐个检查2数和是否为target即可
+
+```
+func twoSum(nums []int, target int) []int {
+    l := len(nums)-1 // index of last item
+    for i:=0; i <= l;i++{
+        for j:=i+1; j <= l;j++{
+            if nums[i] + nums[j] == target {
+                return []int{i,j}
+            }
+        } 
+    }
+    return []int{}
+}
+```
+TODO 下周优化
+
+# Review
+* Unit Testing for REST APIs in Go
+
+讲解了golang中如何比较方便的测试http接口。
+
+PS. 我们公司的测试数据库是一个docker启动的mysql，所有的http接口测试都作用到这个mysql容器中，不会对实际的数据库产生影响。
+
+> https://codeburst.io/unit-testing-for-rest-apis-in-go-86c70dada52d
+
 
 # Tips
 
 golang删除slice中特定条件的元素，优化版
 https://blog.csdn.net/liyunlong41/article/details/85132603
+
+# Share
+
+https://codeburst.io/unit-testing-for-rest-apis-in-go-86c70dada52d
