@@ -17,6 +17,28 @@ checklist: 心算一遍，该数据库设计能否实现主要需求点。 根�
 # Algorithm
 https://leetcode.com/problems/two-sum/
 
+### 解法二
+* 怎么想到的
+这是一个查找问题，固定一个元素，查找单个元素是否存在。 查询范围可以考虑查找表，正好可以使用。
+想到能否用哈希表，每遍历到一个元素num，看target-num是否在hash表中，如果在就得出答案，如果不在就将当前num放入哈希表中。
+
+* 查找表思路的实现： 构造完整查找表后再逐个处理，or 边检查将构造查找表。
+一开始想构建全部元素的查找表，后来发现可以每次处理一个元素，然后根据是否查找到当前元素的匹配元素，再判断是找到了，还是将当前元素插入查找表
+
+```
+func twoSum(nums []int, target int) []int {
+    // k:item of nums, v:index of nums
+    t := make(map[int]int)
+    for i,v := range nums{
+        if index,exist := t[target-v]; exist{
+            return []int{index,i}
+        }else{ // no found,put into search table
+            t[v] = i 
+        }
+    }
+    return []int{}
+}
+```
 
 # Tip
 Q： 数据库设计，为了查询而冗余2份数据，导致数据不一致的问题。
