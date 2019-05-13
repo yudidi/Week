@@ -12,3 +12,5 @@ TODO 考虑是一个排序的数组
 
 golang传递数组的指针
 items *[]*DetailItemVO
+
+https://stackoverflow.com/questions/36242018/golang-pointer-to-slice-and-array
