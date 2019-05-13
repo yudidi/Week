@@ -17,3 +17,6 @@ https://stackoverflow.com/questions/36242018/golang-pointer-to-slice-and-array
 
 包学习
 https://golang.org/pkg/container/heap/
+
+* 测试数据的准备
+通过sql还是http接口呢？
