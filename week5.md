@@ -7,3 +7,8 @@ Algorithm、Review、Tip、Share 简称ARTS
 https://leetcode.com/problems/two-sum/
 TODO 考虑是一个排序的数组
 167. Two Sum II - Input array is sorted
+
+# Tip
+
+golang传递数组的指针
+items *[]*DetailItemVO
