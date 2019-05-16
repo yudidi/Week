@@ -20,3 +20,8 @@ https://golang.org/pkg/container/heap/
 
 * 测试数据的准备
 通过sql还是http接口呢？
+
+
+float64精度问题。
+
+微服务化，家庭成员获取接口，visible统一处理。
