@@ -22,6 +22,9 @@ https://golang.org/pkg/container/heap/
 通过sql还是http接口呢？
 
 
-float64精度问题。
+Q：float64精度问题。
+A： 给出来的是最终解决方案。钱这种东西，从来都不是浮点类型。
+A： https://blog.csdn.net/wslyk606/article/details/81333001
+go语言中float64 保留2位小数
 
 微服务化，家庭成员获取接口，visible统一处理。
