@@ -28,3 +28,6 @@ A： https://blog.csdn.net/wslyk606/article/details/81333001
 go语言中float64 保留2位小数
 
 微服务化，家庭成员获取接口，visible统一处理。
+
+Q: mysql关于 inner join 数据重复问题
+https://blog.csdn.net/qq_29498555/article/details/79695815
