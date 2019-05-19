@@ -25,8 +25,22 @@ func twoSum(nums []int, target int) []int {
 }
 ```
 
-TODO 考虑是一个排序的数组
-167. Two Sum II - Input array is sorted
+* 考虑是一个排序的数组
+
+https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/
+思路：排序数组总是往二分查找上靠。
+
+思路1. 仍然是两次遍历，外层遍历数组nums,当前被处理元素用cur表示，通过二分法查找target-cur. 时间复杂度:n*logn.
+
+思路2. 基于排序的特点. 在[l,r]中寻找和为sum的2个数.
+首尾2个元素l+r与target相比, 
+1. l+r = target, find it.
+2. l+r < target,那么应该再找一个更大的元素，只能是从l往后找，所以 和为targe的2个元素应该在[l+1,r].
+3. l+r > target,那么应该再找一个更小的元素，只能是从r往前找，所以 和为targe的2个元素应该在[l,r-1].
+
+```
+
+```
 
 # Review
 目前在用流利说学习英语口语，英文文章阅读暂缓。
@@ -56,4 +70,5 @@ Q: mysql关于 inner join 数据重复问题
 https://blog.csdn.net/qq_29498555/article/details/79695815
 
 # Share
+DDD 领域模型
 
