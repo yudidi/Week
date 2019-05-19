@@ -5,8 +5,31 @@ Algorithm、Review、Tip、Share 简称ARTS
 
 # Algorithm
 https://leetcode.com/problems/two-sum/
+
+* 这里是使用先构造全部查找表，然后再判断查找表中是否存在(target-cur)
+```
+func twoSum(nums []int, target int) []int {
+	numsMap := make(map[int]int)
+
+	for i, n := range nums {
+		numsMap[n] = i
+	}
+
+	for i, n := range nums {
+		j, ok := numsMap[target-n]
+		if ok && j != i {
+            return []int{i, j}
+		}
+	}
+	return []int{}
+}
+```
+
 TODO 考虑是一个排序的数组
 167. Two Sum II - Input array is sorted
+
+# Review
+目前在用流利说学习英语口语，英文文章阅读暂缓。
 
 # Tip
 
@@ -31,3 +54,6 @@ go语言中float64 保留2位小数
 
 Q: mysql关于 inner join 数据重复问题
 https://blog.csdn.net/qq_29498555/article/details/79695815
+
+# Share
+
