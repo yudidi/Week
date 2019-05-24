@@ -18,3 +18,6 @@ https://blog.csdn.net/Touatou/article/details/83380364
 * map 并发读，并发写，并发读写
 
 https://www.cnblogs.com/qcrao-2018/archive/2019/05/22/10903807.html
+
+* goroutine并发通信
+https://blog.csdn.net/wo18237095579/article/details/81909189
