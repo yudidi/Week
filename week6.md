@@ -20,4 +20,11 @@ https://blog.csdn.net/Touatou/article/details/83380364
 https://www.cnblogs.com/qcrao-2018/archive/2019/05/22/10903807.html
 
 * goroutine并发通信
+
+在工程上，有两种最常见的并发通信模型：共享数据 和 消息。
+
 https://blog.csdn.net/wo18237095579/article/details/81909189
+
+=> channel 不要通过共享内存来通信，而应该通过通信来共享内存。
+
+https://blog.csdn.net/wo18237095579/article/details/81912653
