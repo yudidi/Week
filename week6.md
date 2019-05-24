@@ -33,3 +33,5 @@ https://blog.csdn.net/wo18237095579/article/details/81909189
 => channel 不要通过共享内存来通信，而应该通过通信来共享内存。
 
 https://blog.csdn.net/wo18237095579/article/details/81912653
+
+* 有无缓冲的channel.
