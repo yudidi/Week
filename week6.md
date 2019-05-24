@@ -19,6 +19,11 @@ https://blog.csdn.net/Touatou/article/details/83380364
 
 https://www.cnblogs.com/qcrao-2018/archive/2019/05/22/10903807.html
 
+Q: sync.Map的使用
+https://www.jianshu.com/p/3956267e29cd
+
+TODO: 使用channel通信来保证2个go任务都完成了，最优雅.
+
 * goroutine并发通信
 
 在工程上，有两种最常见的并发通信模型：共享数据 和 消息。
