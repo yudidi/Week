@@ -6,6 +6,14 @@ Algorithm、Review、Tip、Share 简称ARTS
 # Algorithm
 https://leetcode.com/problems/two-sum-iv-input-is-a-bst/
 
+* 如何想到的
+根据之前对two sum的思路。有2层循环暴力求解 || 查找表 || 双指针对撞 三个思路。
+发现第三个思路走不通，因为BST做不到像有序数组那样使用2个指针进行搜索，所以使用查找表进行处理。
+
+
+
+# Review
+目前在用流利说学习英语口语，英文文章阅读暂缓。
 
 # Tip
 
@@ -35,3 +43,10 @@ https://blog.csdn.net/wo18237095579/article/details/81909189
 https://blog.csdn.net/wo18237095579/article/details/81912653
 
 * 有无缓冲的channel.
+
+
+# Share
+Golang库集合
+https://www.jianshu.com/p/6a147fc00721
+Gods - Go 语言数据结构、容器、集合、列表、栈、键值对、 BidiMaps、树、HashSet 等
+Golang-set - 线程安全和非线程安全的高性能集合
