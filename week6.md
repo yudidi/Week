@@ -8,9 +8,74 @@ https://leetcode.com/problems/two-sum-iv-input-is-a-bst/
 
 * 如何想到的
 根据之前对two sum的思路。有2层循环暴力求解 || 查找表 || 双指针对撞 三个思路。
-发现第三个思路走不通，因为BST做不到像有序数组那样使用2个指针进行搜索，所以使用查找表进行处理。
 
+发现思路3走不通，因为BST做不到像有序数组那样使用2个指针进行搜索，所以使用思路2:查找表进行处理。
 
+// 以下代码不对
+
+```
+/**
+ * Definition for a binary tree node.
+ * type TreeNode struct {
+ *     Val int
+ *     Left *TreeNode
+ *     Right *TreeNode
+ * }
+ */
+ 
+func findTarget(root *TreeNode, k int) bool {
+    // 仍然可以使用查找表进行处理.
+    set := make(map[int]bool) // 存入已经遍历过的元素// 一遍遍历，一边往查找表放入值
+    return helper(root.Left,k,set) || helper(root.Right,k,set) // Warning: root节点不会被处理。
+}
+
+// check if set has k-r.
+func helper(cur *TreeNode,k int,set map[int]bool) bool{
+    if cur.Left == nil || cur.Right == nil { // Error: 边界判断有问题，叶子节点在这种情况处理不到.
+        return false
+    }
+    if _,ok := set[k-cur.Val];ok{
+        return true
+    }else{
+        set[cur.Val] = true
+    }
+    return helper(cur.Left,k,set) || helper(cur.Right,k,set)
+}
+```
+
+* 不对的原因
+
+```
+// 1. Error: 边界判断有问题，导致叶子节点不会被处理到
+if cur.Left == nil || cur.Right == nil { 
+
+// 2. Warning: root节点不会被处理。
+return helper(root.Left,k,set) || helper(root.Right,k,set) 
+```
+
+* 修改后通过
+
+```
+func findTarget(root *TreeNode, k int) bool {
+    // 仍然可以使用查找表进行处理.
+    set := make(map[int]bool) // 存入已经遍历过的元素// 一遍遍历，一边往查找表放入值
+    return helper(root,k,set)
+}
+
+// check if set has k-r.
+func helper(cur *TreeNode,k int,set map[int]bool) bool{
+    if cur == nil {
+        return false
+    }
+    if _,ok := set[k-cur.Val];ok{
+        return true
+    }
+    set[cur.Val] = true
+    return helper(cur.Left,k,set) || helper(cur.Right,k,set)
+}
+```
+
+总结：递归函数，易错点：递归逻辑，边界判断。
 
 # Review
 目前在用流利说学习英语口语，英文文章阅读暂缓。
