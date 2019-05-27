@@ -11,3 +11,6 @@ https://leetcode.com/problems/sum-of-left-leaves/
 TODO golang
 1. Map，slice 参数传递
 2. map 并发 https://github.com/yudidi/Week/blob/master/week6.md#tip
+
+* sql查找一列中某一数值出现次数大于2的记录
+https://zhidao.baidu.com/question/1883519508681617748.html
