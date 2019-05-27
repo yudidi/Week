@@ -14,3 +14,11 @@ TODO golang
 
 * sql查找一列中某一数值出现次数大于2的记录
 https://zhidao.baidu.com/question/1883519508681617748.html
+
+
+* 面试-场景设计题，结合工作中的小需求
+
+订单10分钟未支付的提醒
+
+xxx提醒
+
