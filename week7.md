@@ -22,3 +22,6 @@ https://zhidao.baidu.com/question/1883519508681617748.html
 
 xxx提醒
 
+* mysql 计算两个时间之间有多少分钟
+
+https://blog.csdn.net/qq_33335927/article/details/82422530
