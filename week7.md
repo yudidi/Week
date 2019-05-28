@@ -25,3 +25,8 @@ xxx提醒
 * mysql 计算两个时间之间有多少分钟
 
 https://blog.csdn.net/qq_33335927/article/details/82422530
+
+
+* golang,timeout: context or select
+一个ctx可以被多个函数共用便于统一管理
+不然你要修改一下延迟时间还得一个一个改
