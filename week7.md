@@ -42,5 +42,12 @@ http://jgao.io/?p=7
 
 * select
 
+* select+time.After的方式的弊端
+
+ `time.After()`
+ `time.NewTimer`
+
+https://studygolang.com/articles/1882
+
 
 
