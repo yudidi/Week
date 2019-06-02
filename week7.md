@@ -6,6 +6,23 @@ Algorithm、Review、Tip、Share 简称ARTS
 
 https://leetcode.com/problems/sum-of-left-leaves/
 
+* 思路容易有，但是不好实现。
+
+遍历所有节点，判断是否是左叶子节点，如果是则放入累加值中。
+
+难点：具体编程实现。
+
+```
+```
+
+TODO：用递归和非递归
+
+借鉴:
+https://blog.csdn.net/mebiuw/article/details/52664346?_t=t
+
+# Review
+目前在用流利说学习英语口语，英文文章阅读暂缓。
+
 # Tip 
 
 TODO golang
@@ -52,6 +69,8 @@ https://studygolang.com/articles/1882
 
 * golang.org/x/image/math/fixed 下载
 
+
+# Share
 
 
 
