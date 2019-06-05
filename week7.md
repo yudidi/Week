@@ -18,6 +18,38 @@ https://leetcode.com/problems/sum-of-left-leaves/
 -> 2. 在二叉树的遍历算法基础上增加检测结点的“左右子树是否都为空”,用于判断是否为叶子节点 -> 1. 如何判断是左叶子节点，传入一个标记，表明是左还是右。
 
 ```
+func sumOfLeftLeaves(root *TreeNode) int {
+    if root == nil{
+        return 0
+    }
+    return dfs(root,false)
+}
+
+// 求root为根的树的左叶子节点的和
+// root: 子树的根节点
+// isLeft: 是否是左子树的根节点，只有这种情况才能是左叶子节点。
+func dfs(root *TreeNode,isLeft bool) int { // 模拟运行:root是 1节点，3节点，5节点
+    if root == nil{
+        return 0
+    }
+    // 节点类型判断：要么是叶子节点，要么是非叶子节点。 叶子节点又分为左叶子和右叶子。 
+    if root.Left == nil && root.Right == nil && isLeft { // 左叶子
+         return root.Val
+    } else {  // 右叶子 + 非叶子
+        return dfs(root.Left,true) + dfs(root.Right,false)
+    }
+}
+
+// 关键: 
+// 1. 叶子节点的判断：root.Left == nil && root.Right == nil 
+// 2. 左右叶子的判断: isLeft
+
+// 思路：本题是求左叶子节点的和，肯定要遍历左叶子节点。 1. 先思考遍历叶子节点 -> 2. 思考遍历全部节点 -> 3+1. 遍历全部
+// 节点+ 如何判断是叶子节点 -> 4. 找到了叶子节点后，又如何判断是左叶子节点 -> 5. 递归函数中如何累计求和。
+
+// Q: 为什么不需要传递一个sum值，用于存放累加的结果。
+// A：考虑到递归函数的执行过程，函数会一层层返回，每个函数把左叶子节点的值返回给上一个调用函数即可。
+// A：这和递归函数是栈结构没有关系，不要把因果关系搞混了，是因为需要一层层返回，所以才选的栈，作为函数调用关系的存储结构
 ```
 
 TODO：用递归和非递归
