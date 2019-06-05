@@ -11,3 +11,9 @@ Algorithm、Review、Tip、Share 简称ARTS
 源源不断的需求变更，迟早会把你当初还算满意的代码结构修改的面目全非，所以即便是一条简单的赋值语句，也最好把它封装在函数里吧。
 因为你不知道什么时候来了一个需求会改变它。这样即便是反复的修改，也不会影响到主体代码结构的可读性。
 也算是明白了，为什么很多框架中会有大量只有一条return语句的函数存在。
+
+# Share
+
+## context 专题
+
+https://www.flysnow.org/2017/05/12/go-in-action-go-context.html
