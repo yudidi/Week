@@ -16,6 +16,16 @@ Algorithm、Review、Tip、Share 简称ARTS
 
 ## context 专题
 
+
+
+context的作用：
+考虑有一个goroutine专门用于监控。
+考虑从一个goroutine1中创建的多层嵌套的goroutine，我们需要取消所有的goroutine,如何做到取消以goroutine1作为树根的所有创建的goroutine。
+
 https://github.com/developer-learning/reading-go/issues/191
 
 https://www.flysnow.org/2017/05/12/go-in-action-go-context.html
+
+
+## context的取消特性，导致的一些坑
+https://zhuanlan.zhihu.com/p/34417106
