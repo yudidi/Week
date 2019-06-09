@@ -5,6 +5,9 @@ Algorithm、Review、Tip、Share 简称ARTS
 # Algorithm
 
 
+# Review
+目前在用流利说学习英语口语，英文文章阅读暂缓。
+
 # Tip
 
 ## Q: 为什么很多框架中会有大量只有一条return语句的函数存在
@@ -12,11 +15,18 @@ Algorithm、Review、Tip、Share 简称ARTS
 因为你不知道什么时候来了一个需求会改变它。这样即便是反复的修改，也不会影响到主体代码结构的可读性。
 也算是明白了，为什么很多框架中会有大量只有一条return语句的函数存在。
 
+## MySQL唯一索引和普通索引运行原理和使用选择
+https://blog.csdn.net/Srodong/article/details/88838046
+
+## MySQL索引原理以及查询优化
+https://www.cnblogs.com/bypp/p/7755307.html
+
+## 干货 MySQL常见的面试题 + 索引原理分析
+https://www.cnblogs.com/blogtech/p/10530794.html
+
 # Share
 
 ## context 专题
-
-
 
 context的作用：
 考虑有一个goroutine专门用于监控。
