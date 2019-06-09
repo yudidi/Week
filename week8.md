@@ -26,6 +26,7 @@ func removeDuplicates(nums []int) int {
 }
 ```
 
+https://blog.csdn.net/u014627807/article/details/79383955
 
 # Review
 目前在用流利说学习英语口语，英文文章阅读暂缓。
