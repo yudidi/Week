@@ -3,6 +3,12 @@ Algorithm、Review、Tip、Share 简称ARTS
 1.每周至少做一个 leetcode 的算法题 2.阅读并点评至少一篇英文技术文章 3.学习至少一个技术技巧 4.分享一篇有观点和思考的技术文章
 
 # Algorithm
+https://leetcode.com/problems/remove-duplicates-from-sorted-array/
+
+思路1: 使用map记录不同数字出现的次数，然后遍历map出现次树>2的元素进行删除。
+不满足空间复杂度O(1)的前提。
+
+思路2: 从题目要求来看，应该是只能用一个中间变量。
 
 
 # Review
