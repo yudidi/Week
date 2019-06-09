@@ -8,7 +8,23 @@ https://leetcode.com/problems/remove-duplicates-from-sorted-array/
 思路1: 使用map记录不同数字出现的次数，然后遍历map出现次树>2的元素进行删除。
 不满足空间复杂度O(1)的前提。
 
-思路2: 从题目要求来看，应该是只能用一个中间变量。
+思路2: 从题目要求来看，应该是只能用一个中间变量。 注意是排序数组，所以关键是如何知道相同元素的第一个和最后一个元素的位置。
+
+```
+func removeDuplicates(nums []int) int {
+    m := make(map[int]int) // 使用map存放所有数字 -> 使用map存放前一个出现的数字
+    
+    m[nums[0]] = 1
+    for i,v := range nums{
+        if _,e := m[v]; e {
+            nums = append(nums[:i],nums[i+1:]...) // 一遍删除，一遍序号会变化吧?
+        }else{
+            m[v] := 1
+        }
+    }
+    return len(nums)
+}
+```
 
 
 # Review
