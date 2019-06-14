@@ -9,6 +9,8 @@
 
 # Tip
 
+* inner join PK left join
+left join 会导致有缺列的左表数据被查询出来，进而导致bug。
 
 * Json RawMessage
 使用场景：某个字段是嵌套的结构体，并且这个结构体字段是不同的。有一个同级的字段用于表明类型，需要先解析这个字段才能解析嵌套的字段。
