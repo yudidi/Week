@@ -85,6 +85,32 @@ func removeDuplicates(nums []int) int {
 }
 ```
 
+1. `r<n-1` -> `r<n`
+2. border check.
+
+```
+// 1,1,2 -> 1,2
+// [0,l]表示去重后数组  // i:表示下一个要处理的元素
+func removeDuplicates(nums []int) int {
+    if len(nums) == 0{
+        return 0
+    }
+    l := 0 // [0,0]
+    n := len(nums)
+    for r:=0;r<n;{ // YC: 改为一同出发，只是速度不同。 
+        if nums[r] == nums[l]{ // one[1=1 => l=0,r=1] // two[l(1)=r(1) => l=0,r=2]
+            r++
+        }else{ // find a number // three:[l(*0)!=r(*2) => l=1 => [1,1(l),2(r)] =>[1,2,2] => r=3]
+            l++
+            nums[l] = nums[r] // YC: 是覆盖，不是交换。交换会把num[l]交换到后面的nums[r]，从而导致问题。
+            r++
+        }
+    }
+    nums = nums[0:l+1]
+    return len(nums)
+}
+```
+
 
 # Review
 目前在用流利说学习英语口语，英文文章阅读暂缓。
