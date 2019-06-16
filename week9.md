@@ -25,4 +25,5 @@ https://www.jianshu.com/p/c06666b8249c
 
 # Share
 自己动手写docker-Chapter 1:
+
 Linux Namespace 是 Kernel 的一个功能，它可以隔离一系列的系统资源，比如 PIO (Process ID)、 User ID、 Network 等。 
