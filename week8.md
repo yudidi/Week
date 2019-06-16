@@ -34,10 +34,57 @@ func removeDuplicates(nums []int) int {
 2. 输出是：按照顺序去重后的数组(原地去重) + 去重数组长度。
 
 怎么想到的: 举例子，观察输入和输出: 1,1,2,2,3 -> 1,2,3 (3). 可以发现 第1个出现的2，需要换到第二个1的位置。 也即是说：去重的数组的每个值都是第一次出现的那个重复的数组交换过来的。这样就容易产生一个遍历+交换/覆盖的思路。
- 
 
+运行未通过
+
+```
+// 1,1,2 -> 1,2
+// [0,l]表示去重后数组  // i:表示下一个要处理的元素
+func removeDuplicates(nums []int) int {
+    l := 0 // [0,0]
+    n := len(nums)
+    for i:=1;i<n-1;i++{
+        if nums[i] == nums[l]{
+            continue
+        }else{ // i != l, find another element nums[i]
+            l++
+            nums[l],nums[i] = nums[i],nums[l]
+        }
+    }
+    nums = nums[0:l]
+    return len(nums)
+}
+```
+
+难点：2个指针的含义不明，初始状态没有很好的定义出来
 
 https://blog.csdn.net/u014627807/article/details/79383955
+
+* 借鉴思路3plus：
+
+快慢指针：慢指针[0,l]表示去重后的数组，快指针r用于寻找首次出现的不同数组，然后把swap(l+1,r)，用于扩展去重数组。
+
+错误：交换导致去重数组中的值被交换到数组后面，从而导致了问题。
+
+```
+// 1,1,2 -> 1,2
+// [0,l]表示去重后数组  // i:表示下一个要处理的元素
+func removeDuplicates(nums []int) int {
+    l := 0 // [0,0]
+    n := len(nums)
+    for r:=1;r<n-1;r++{
+        if nums[r] == nums[l]{
+            continue
+        }else{ // find a number
+            l++
+            nums[l] = num[r] // YC: 是覆盖，不是交换。交换会把num[l]交换到后面的nums[r]，从而导致问题。
+        }
+    }
+    nums = nums[0:l+1]
+    return len(nums)
+}
+```
+
 
 # Review
 目前在用流利说学习英语口语，英文文章阅读暂缓。
