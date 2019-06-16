@@ -4,6 +4,8 @@
 
 # Algorithm
 
+https://leetcode.com/problems/remove-element/
+
 # Review
 目前在用流利说学习英语口语，英文文章阅读暂缓。
 
@@ -22,3 +24,5 @@ left join 会导致有缺列的左表数据被查询出来，进而导致bug。
 https://www.jianshu.com/p/c06666b8249c
 
 # Share
+自己动手写docker-Chapter 1:
+Linux Namespace 是 Kernel 的一个功能，它可以隔离一系列的系统资源，比如 PIO (Process ID)、 User ID、 Network 等。 
