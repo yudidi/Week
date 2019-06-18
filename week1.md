@@ -67,6 +67,11 @@ PS: 因为id可能被其他业务依赖，如此会导致问题，所以MYSQL不
 
 3. 方案三：ON DUPLICATE KEY UPDATE
 
+ 在实际应用中，经常碰到导入数据的功能，当导入的数据不存在时则进行添加，有修改时则进行更新，
+在刚碰到的时候，第一反应是将其实现分为两块，分别是判断增加，判断更新，后来发现在mysql中有
+ON DUPLICATE KEY UPDATE一步就可以完成，感觉实在是太方便了。
+https://www.cnblogs.com/zjdxr-up/p/8319982.html
+
 > referece
 
 http://blog.sae.sina.com.cn/archives/3491
