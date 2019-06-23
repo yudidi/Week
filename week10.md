@@ -32,6 +32,20 @@ func removeElement(nums []int, val int) int {
 
 # Tip
 
+* mysql根据中文进行排序
+
+ORDER BY CONVERT(name USING gbk)
+
+* 如何设计关系数据库表
+
+```
+disease // 实体表：疾病信息
+disease_question // 实体表：问题信息，包含多对一（问题-疾病）的多（疾病id）
+product_disease_relation // 关系表（产品id，疾病id）：产品疾病关系 （产品-疾病：多对多）所以这个关系只能独立存在。
+disease_label_type // 关系表（产品疾病关系ID，）：投保类型表  // Q：这个表应该属于实体表还是关系，暂不明朗。 TODO
+disease_label_q_a // 关系表（投保类型id，问题id）：投保组合问答表 
+```
+
 # Share
 
 Q：你知道哪些数据结构可以提高查询速度？
