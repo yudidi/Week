@@ -11,3 +11,8 @@ TODO  其他解法
 # Tip
 mysql中数据类型的取值范围
 https://www.cnblogs.com/web21/p/6016120.html
+
+
+Golang神奇的2006-01-02 15:04:05
+
+https://www.jianshu.com/p/c7f7fbb16932
