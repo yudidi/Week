@@ -7,3 +7,7 @@
 https://leetcode.com/problems/remove-element/
 
 TODO  其他解法
+
+# Tip
+mysql中数据类型的取值范围
+https://www.cnblogs.com/web21/p/6016120.html
