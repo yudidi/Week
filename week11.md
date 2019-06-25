@@ -39,3 +39,12 @@ linux面试
     vfs上层 net上层，学习bcc systemtap等
 *有句话，了解完ioctl各种参数使用和细节，内核基本会了一半
 ```
+
+
+* golang json
+
+`json:"-" column:"detail"`
+
+* golang reflect
+
+ reflect: call of reflect.Value.Set on zero Value
