@@ -52,3 +52,12 @@ linux面试
 * golang reflect
 
  reflect: call of reflect.Value.Set on zero Value
+ 
+ 
+ * MySql - 快速执行：在update时使用select赋值
+ 
+```
+UPDATE disease_question T1,disease_question T2 SET T2.rank= T1.id  WHERE T1.rank = 127 ANd T1.id = T2.id
+```
+ https://blog.csdn.net/qq_15071263/article/details/79001487
+
