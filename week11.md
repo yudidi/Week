@@ -60,4 +60,9 @@ linux面试
 UPDATE disease_question T1,disease_question T2 SET T2.rank= T1.id  WHERE T1.rank = 127 ANd T1.id = T2.id
 ```
  https://blog.csdn.net/qq_15071263/article/details/79001487
+ 
+ 
+ * mysql 字段 is not null 和 字段 !=null
+ https://blog.csdn.net/wangzaza/article/details/79484069
+ 
 
