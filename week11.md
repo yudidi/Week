@@ -15,6 +15,25 @@ https://leetcode.com/problems/remove-element/
 
 算法：When we encounter nums[i] = val, we can `swap the current element out with the last element and dispose the last one`. This essentially reduces the array's size by 1.
 
+```
+func removeElement(nums []int, val int) int {
+    // if nums[i] == val, swapped it with the last one and drop the last one.
+    // This essentially reduces the array's size by 1.
+    
+    // So the size of array is change,we can use 'for',and should use 'while'
+    i := 0
+    n := len(nums)
+    for ;i<n;{
+        if nums[i] == val{
+            nums[i],nums[n-1] = nums[n-1],nums[i]
+            n--
+        }else{
+            i++
+        }
+    }
+    return n
+}
+```
 
 * golang删除slice中特定条件的元素，优化版
 
