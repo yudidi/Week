@@ -71,7 +71,6 @@ linux面试
 *有句话，了解完ioctl各种参数使用和细节，内核基本会了一半
 ```
 
-
 * golang json
 
 `json:"-" column:"detail"`
@@ -93,3 +92,12 @@ UPDATE disease_question T1,disease_question T2 SET T2.rank= T1.id  WHERE T1.rank
  https://blog.csdn.net/wangzaza/article/details/79484069
  
 
+# Share
+无
+
+# Review
+
+* The Checklist of my code review
+https://medium.com/@same7mabrouk/the-checklist-of-my-code-review-18cc6f6fb5b3
+
+我试图总结我们公司的Go Checklist,这是一篇不错的文章可以借鉴。
