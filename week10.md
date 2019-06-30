@@ -12,6 +12,9 @@ https://leetcode.com/problems/remove-element/
 编程体现：[0,i]表示结果数组，j指针用于挑选元素，不断的放到i位置，然后结果数组扩展1位。
 如此循环，直到j到达数组末尾，挑选完毕。此时[0,i]就是结果数组。
 
+ `可以想象有一个影子数组，图解：` 
+https://www.processon.com/mindmap/5d186231e4b02f3e4dadb357
+
 ```
 // 3,2,2,3 // i:指向结果数组  j:用于挑选元素，添加到结果数组中。
 // YC：初始化
