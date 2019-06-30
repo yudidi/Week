@@ -6,7 +6,15 @@
 
 https://leetcode.com/problems/remove-element/
 
-TODO  其他解法
+* 解法1总结：就是遍历所有元素，然后把需要保留的元素，Copy到结果数组中，如果是需要删除的元素，则不进行Copy，最后结果数组中都是需要保留的元素了。
+
+如果需要删除的元素很少，我其实并不需要Copy那么多次。
+比如`nums=[1,2,3,5,4],val=4`,前4个元素的copy可以想办法去掉 和 `nums=[4,1,2,3,5],val=4`，
+
+* Approach 2: Two Pointers - when elements to remove are rare.
+
+算法：When we encounter nums[i] = val, we can `swap the current element out with the last element and dispose the last one`. This essentially reduces the array's size by 1.
+
 
 * golang删除slice中特定条件的元素，优化版
 
