@@ -6,3 +6,14 @@
 # Algorithm
 
 https://leetcode.com/problems/reverse-integer/
+
+
+# Tip
+
+判断数据是否存在，多个插入请求同时发生时，导致插入多组相同数据。
+
+```
+1. check
+2. insert multiple
+3. commit
+```
