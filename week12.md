@@ -10,10 +10,12 @@ https://leetcode.com/problems/reverse-integer/
 
 # Tip
 
-判断数据是否存在，多个插入请求同时发生时，导致插入多组相同数据。
+Q: 判断数据是否存在，多个插入请求同时发生时，导致插入多组相同数据。
 
 ```
 1. check
 2. insert multiple
 3. commit
 ```
+A: 接口的幂等性.
+如何防止重复提交数据，导致出现重复数据。
