@@ -34,3 +34,6 @@ A: 接口的幂等性.
 > 高并发下接口幂等性解决方案
 
 https://blog.csdn.net/u011635492/article/details/81058153
+
+* MySQL字段属性应该尽量设置为NOT NULL
+https://www.cnblogs.com/liaokaichang/p/7879010.html
