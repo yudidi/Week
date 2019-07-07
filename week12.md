@@ -11,14 +11,41 @@ https://leetcode.com/problems/reverse-integer/
 
 官方思路2：逆序，借助额外的栈(先进后出) 实现数字逆序 + 边界判断(不同语言方法不同)。
 进一步：使用数学方法实现顺序找出数字和逆序找出数字
+> 或者 https://studygolang.com/articles/13289
 
 思路3: 纯粹使用字符串逆序的方法来实现反转。
 > https://blog.csdn.net/wangguoyang429883793/article/details/72904589
 
 ```
+
 func reverse(x int) int {
+    max := int(math.Pow(2,31) - 1)
+    _x := int(math.Abs(float64(x)))
+    s := strconv.Itoa(_x) 
+    s = res(s)
+    res,_:=strconv.Atoi(s)
+    if res > max {
+        return 0
+    }
+    if x > 0 {
+        return res
+    }
+    return -res
+}
+
+func res(s string) string {
+    len := len(s)
+    res := ""
+    for i := len - 1; i >= 0 ; i-- {
+        res += string(s[i])
+    }
+    return res
 }
 ```
+
+* 几个知识点
+1. 32位无符号数最大值: int(math.Pow(2,31) - 1)
+2. 
 
 # Tip
 
