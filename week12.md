@@ -7,6 +7,14 @@
 
 https://leetcode.com/problems/reverse-integer/
 
+```
+
+// 思路1：符号不变，数字逆序即可，同时判断一些越界。
+// 借鉴思路： 逆序，先进后车。
+func reverse(x int) int {
+    
+}
+```
 
 # Tip
 
