@@ -24,10 +24,10 @@ func reverse(x int) int {
     s := strconv.Itoa(_x) 
     s = res(s)
     res,_:=strconv.Atoi(s)
-    if res > max {
+    if res > max { // 越界
         return 0
     }
-    if x > 0 {
+    if x > 0 { // 正数
         return res
     }
     return -res
