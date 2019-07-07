@@ -37,3 +37,9 @@ https://blog.csdn.net/u011635492/article/details/81058153
 
 * MySQL字段属性应该尽量设置为NOT NULL
 https://www.cnblogs.com/liaokaichang/p/7879010.html
+
+
+* golang性能分析
+
+https://github.com/wangyaofenghist/ARTS/blob/master/Share/golang-work-pool-careful.adoc
+
