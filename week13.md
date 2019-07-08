@@ -20,7 +20,7 @@
 去重问题
 1. 有序数组去重
 2. 无序数组去重
-3. 去重时，下标的联动变化问题
+3. 删除数组中元素，下标的联动变化问题
 
 一个典型的无序数组去重问题。 > https://git.lcgc.work/insurance/service/merge_requests/353/diffs
 
