@@ -5,6 +5,6 @@
 
 
 
-# Algorithm、Review、Tip、Share 简称ARTS
+# Share
 
 https://blog.csdn.net/basonson/article/details/50924466
