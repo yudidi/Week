@@ -13,6 +13,14 @@
 1. 关系表：产品id+搜索条件
 2. 关系表：搜索条件+产品ID
 
+* bug修改问题
+
+去重问题
+1. 有序数组去重
+2. 无序数组去重
+3. 去重时，下标的联动变化问题
+
+
 # Share
 
 https://blog.csdn.net/basonson/article/details/50924466
