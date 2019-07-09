@@ -44,6 +44,9 @@ for _, r := range response.List {
 
 ```
 
+* 如何遍历结构体
+https://www.golangtc.com/t/52c4e367320b525eb500004e
+
 
 # Share
 
