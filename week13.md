@@ -56,3 +56,6 @@ https://www.golangtc.com/t/52c4e367320b525eb500004e
 # Share
 
 https://blog.csdn.net/basonson/article/details/50924466
+
+数据中台演进的四个阶段
+https://www.jiqizhixin.com/articles/2019-04-23-4
