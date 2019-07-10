@@ -53,6 +53,10 @@ https://www.golangtc.com/t/52c4e367320b525eb500004e
 
 * golang 字符串的修改，微信收藏图片
 
+* mysql杀死死锁的事务
+
+https://www.cnblogs.com/topicjie/p/7323248.html
+
 # Share
 
 https://blog.csdn.net/basonson/article/details/50924466
