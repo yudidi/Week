@@ -57,6 +57,16 @@ https://www.golangtc.com/t/52c4e367320b525eb500004e
 
 https://www.cnblogs.com/topicjie/p/7323248.html
 
+* 开发流程的问题
+
+1. 需求评审
+2. 设计评审
+
+目前的问题
+1. 需求应该达到的目标: 有一个基本的思路，然后可以较快的写出接口文档，明确这些接口实现的思路。
+2. 不能省略开发流程中的步骤: "设计评审",评审文档和具体接口实现逻辑。
+
+
 # Share
 
 https://blog.csdn.net/basonson/article/details/50924466
