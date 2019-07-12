@@ -70,6 +70,10 @@ https://www.cnblogs.com/topicjie/p/7323248.html
 * Golang 大杀器之性能剖析 PProf
 https://www.jianshu.com/p/4e4ff6be6af9
 
+* 正则: ^和$符合, 判断相等
+
+^(70岁)$|^(终身)$"
+
 # Share
 
 https://blog.csdn.net/basonson/article/details/50924466
