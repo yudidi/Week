@@ -74,6 +74,9 @@ https://www.jianshu.com/p/4e4ff6be6af9
 
 ^(70岁)$|^(终身)$"
 
+* kibana的使用
+
+
 # Share
 
 https://blog.csdn.net/basonson/article/details/50924466
