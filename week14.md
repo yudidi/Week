@@ -9,3 +9,13 @@
 https://www.dgstack.cn/archives/2917.html
 
 https://github.com/elastic/kibana/pull/9198
+
+
+# Share
+
+* 确定需求优先级：矩阵思维
+http://www.woshipm.com/pmd/933370.html
+
+* FAQ-产品经理对产品细节需要给出到什么程度，才不会被开发骂？
+
+https://www.zhihu.com/question/48210161
