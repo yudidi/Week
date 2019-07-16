@@ -5,4 +5,7 @@
 # Tip
 
 * kibana 快速查询记录的上下100行
+
 https://www.dgstack.cn/archives/2917.html
+
+https://github.com/elastic/kibana/pull/9198
