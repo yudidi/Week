@@ -19,3 +19,8 @@ http://www.woshipm.com/pmd/933370.html
 * FAQ-产品经理对产品细节需要给出到什么程度，才不会被开发骂？
 
 https://www.zhihu.com/question/48210161
+
+* 业务相关
+
+​互联网保险：模式、玩法和痛点、未来
+http://www.woshipm.com/it/420819.html
