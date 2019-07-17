@@ -14,6 +14,16 @@ https://github.com/elastic/kibana/pull/9198
 https://www.cnblogs.com/runtimeexception/p/10361099.html
 
 
+* 多列索引 可以按照leftmost原则 替代单列索引
+
+用简略地话来说，Unique Index的Index作用：1）当只有一个字段时，其Index作用也同样地施加到该字段上；2）当为多个字段的组合时，其Index的作用，只施加到组合的第一个字段上。
+
+所谓差之毫厘，谬之千里。当待检索的字段是某个Unique Index的组合字段之一，且不是第一个时，被用做Where的查询条件，查询性能将急剧下降，每次皆是全表扫描，逐行对比。
+
+这种性能隐患，在开发初期并不容易发现，只有当数据量级增长到10M+时，查询耗时才会逐步显现出来。
+> https://ufqi.com/blog/sql-optimize-unique-and-index/
+> https://dev.mysql.com/doc/refman/8.0/en/multiple-column-indexes.html
+
 # Share
 
 * 确定需求优先级：矩阵思维
