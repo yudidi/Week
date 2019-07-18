@@ -37,3 +37,6 @@ https://www.zhihu.com/question/48210161
 
 ​互联网保险：模式、玩法和痛点、未来
 http://www.woshipm.com/it/420819.html
+
+* 软件开发和协作工具
+https://www.baidu.com/s?wd=atlassian&rsv_spt=1&rsv_iqid=0xe48651bf00031e7b&issp=1&f=8&rsv_bp=1&rsv_idx=2&ie=utf-8&rqlang=cn&tn=baiduhome_pg&rsv_enter=1&rsv_t=8a6dhAOItPklLpmyCL7fdU96yjuycCq7kYtRaBWMl4sXh2K0WUpga88EKxib4%2FAfloWc&oq=atlassian&inputT=312&rsv_sug3=2&rsv_pq=8c63c8580003bb68&rsv_sug2=0&rsv_sug4=980
