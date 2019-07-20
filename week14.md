@@ -2,6 +2,38 @@
 1.每周至少做一个 leetcode 的算法题 2.阅读并点评至少一篇英文技术文章 3.学习至少一个技术技巧 4.分享一篇有观点和思考的技术文章
 
 
+# Algorithm
+https://leetcode.com/problems/search-insert-position/
+
+* 思路
+数组是有序的. 
+发现这个函数需要做2件事情:
+1. loop and find index if target. 这个用二分查找就可以作答
+2. find insert position
+
+```
+func searchInsert(nums []int, target int) int {
+    // loop and find it index
+    l := 0
+    r := len(nums)-1
+    var insert int
+    for ;; {
+        m = l + (r-l)/2
+        if target == nums[m] {
+            return m
+        }else if target > nums[m] {
+            l = m+1 // [m+1,r]
+            insert = m+1
+        }else {
+            r = m-1 // [l,m-1]
+            insert = m1
+        }
+    }
+    return insert
+    // find insert position
+}
+```
+
 # Tip
 
 * kibana 快速查询记录的上下100行
