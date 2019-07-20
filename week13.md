@@ -3,6 +3,77 @@
 
 1.每周至少做一个 leetcode 的算法题 2.阅读并点评至少一篇英文技术文章 3.学习至少一个技术技巧 4.分享一篇有观点和思考的技术文章
 
+# Algorithm
+https://leetcode.com/problems/search-insert-position/
+
+* 思路
+数组是有序的. 
+发现这个函数需要做2件事情:
+1. loop and find index if target. 这个用二分查找就可以作答
+2. find insert position
+
+* 提交未通过
+```
+func searchInsert(nums []int, target int) int {
+    // loop and find it index
+    l := 0
+    r := len(nums)-1
+    var insert int
+    for ;; {
+        m = l + (r-l)/2
+        if target == nums[m] {
+            return m
+        }else if target > nums[m] {
+            l = m+1 // [m+1,r]
+            insert = m+1
+        }else {
+            r = m-1 // [l,m-1]
+            insert = m1
+        }
+    }
+    return insert
+    // find insert position
+}
+```
+
+```
+输入：
+[1,3,5,6]
+0
+输出：
+-1
+预期：
+0
+```
+
+* 修正边界情况后，解答通过。
+插入右边界和左边界，处理方法是不同的，通过给出的测试用例进行分析即可知道。
+
+```
+func searchInsert(nums []int, target int) int {
+    // loop and find it index
+    l := 0
+    r := len(nums)-1
+    var insert int
+    for ;l<=r; {
+        m := l + (r-l)/2
+        if target == nums[m] {
+            return m
+        }else if target > nums[m] {
+            l = m+1 // [m+1,r]
+            insert = m+1  // 插入右边界，可以+1。
+        }else {
+            r = m-1 // [l,m-1]
+            insert = m  // 插入左边界，是不能-1。 PS. 左边界需要特殊处理
+        }
+    }
+    if insert == -1 { // PS. 左边界需要特殊处理
+        return 0
+    }
+    return insert
+    // find insert position // 要注意target在边界的情况，插入左边界和右边界
+}
+```
 
 # Tip 
 
