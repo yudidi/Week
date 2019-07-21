@@ -10,7 +10,8 @@ https://leetcode-cn.com/problems/maximum-subarray/
 1. feature分支和master分支应该 尽快合并
 2. 只能从master切出feature分支，不能从feature分支切出feature分支
 3. 把子分支合并到父分支，而不是把2个兄弟分支进行合并
-https://itnext.io/recommendations-to-avoid-merge-conflicts-845ec133676e
+
+> https://itnext.io/recommendations-to-avoid-merge-conflicts-845ec133676e
 
 # Tip
 
