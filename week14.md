@@ -51,3 +51,6 @@ http://www.woshipm.com/it/420819.html
 
 * 软件开发和协作工具
 https://www.baidu.com/s?wd=atlassian&rsv_spt=1&rsv_iqid=0xe48651bf00031e7b&issp=1&f=8&rsv_bp=1&rsv_idx=2&ie=utf-8&rqlang=cn&tn=baiduhome_pg&rsv_enter=1&rsv_t=8a6dhAOItPklLpmyCL7fdU96yjuycCq7kYtRaBWMl4sXh2K0WUpga88EKxib4%2FAfloWc&oq=atlassian&inputT=312&rsv_sug3=2&rsv_pq=8c63c8580003bb68&rsv_sug2=0&rsv_sug4=980
+
+* 高并发性能调试经验分享(上）
+https://mp.weixin.qq.com/s?__biz=MTEwNTM0ODI0MQ==&mid=2653434570&idx=1&sn=622ccb2d82e8900f9f5a71d6f20b7624&chksm=720123344576aa2283da29cb0659d152b7ea00ec34d5a2a05fcd7b0bf44a7064343abac3cf25&scene=21#wechat_redirect
