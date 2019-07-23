@@ -28,3 +28,5 @@ SELECT * FROM product_search_relation WHERE query_type = ? AND query_value = ? A
 UNION
 SELECT * FROM product_search_relation WHERE query_type = ? AND query_value = ? AND is_recommend = TRUE`
 ```
+
+## panic导致事务没有结束，导致死锁
