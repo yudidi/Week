@@ -16,7 +16,7 @@ A2: 其他在基础数据上衍生的接口，不必覆盖测试
 
 * 修改基础数据相关表时，需要明确哪些业务用到了该表，注意修改。
 
-## sql语句编写时，考虑到是否能使用索引
+## sql语句编写时，需要考虑是否能使用索引
 
 ```
 SELECT * FROM product_search_relation WHERE ( query_type, query_value, is_recommend ) IN ((?,?,TRUE),(?,?,TRUE),(?,?,TRUE));
