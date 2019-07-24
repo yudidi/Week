@@ -55,6 +55,8 @@ func main() {
 
 ```
 
+你的map里的key 1的默认类型是int
+
 ## 记Golang switch的一个“坑”
 golang  switch 默认给每个case都加了break
 https://blog.csdn.net/Coder_MA/article/details/81434834
