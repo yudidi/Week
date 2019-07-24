@@ -34,3 +34,23 @@ SELECT * FROM product_search_relation WHERE query_type = ? AND query_value = ? A
 ## 旧的公共接口不能随便该，尤其是没有完整测试的情况下。会出现异常情况。
 家庭成员add和update接口修改。
 旧接口不能随便该，尤其是没有完整测试的情况下。会出现异常情况。
+
+## map的key如果是interface，是什么意思
+
+```
+var sexMapping = map[interface{}]int64{
+	1:   1,
+	2:   2,
+	"1": 1,
+	"2": 2,
+}
+
+func main() {
+	var i interface{}
+	i = 1
+	fmt.Println(sexMapping[i])
+	i = "1"
+	fmt.Println(sexMapping[i])
+}
+
+```
