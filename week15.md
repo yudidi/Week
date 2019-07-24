@@ -60,3 +60,9 @@ func main() {
 ## 记Golang switch的一个“坑”
 golang  switch 默认给每个case都加了break
 https://blog.csdn.net/Coder_MA/article/details/81434834
+
+
+## 团队士气管理
+
+一个项目延期太多，导致士气下降。
+
