@@ -30,3 +30,7 @@ SELECT * FROM product_search_relation WHERE query_type = ? AND query_value = ? A
 ```
 
 ## panic导致事务没有结束，导致死锁
+
+## 旧的公共接口不能随便该，尤其是没有完整测试的情况下。会出现异常情况。
+家庭成员add和update接口修改。
+旧接口不能随便该，尤其是没有完整测试的情况下。会出现异常情况。
