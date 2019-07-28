@@ -97,3 +97,15 @@ https://blog.csdn.net/Coder_MA/article/details/81434834
 
 一个项目延期太多，导致士气下降。
 
+
+# Share
+
+Tests Coverage is Dead — Long Live Mutation Testing
+即使测试覆盖率100%，也不能保障程序的正确性。
+需要“变异测试”，在任何地方构造异常，来测试系统的健壮性。
+
+> TiDB 的开发就是这样的
+
+> https://medium.com/appsflyer/tests-coverage-is-dead-long-live-mutation-testing-7fd61020330e
+
+
