@@ -3,7 +3,13 @@ Algorithm、Review、Tip、Share 简称ARTS
 
 
 # Algorithm
-https://leetcode.com/problems/maximum-subarray/
+
+https://leetcode.com/problems/minimum-size-subarray-sum/
+
+* 题意
+
+寻找一个最短的子数组，这个子数组的和sum >= s.
+
 
 * 暴力解法
 
