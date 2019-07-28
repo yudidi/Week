@@ -56,6 +56,7 @@ func main() {
 ```
 
 你的map里的key 1的默认类型是int
+`如果定义一个interface的变量k, sexMapping[k]是匹配不到值的，因为map匹配要求key的类型和值都相同才能匹配`
 
 ## 记Golang switch的一个“坑”
 golang  switch 默认给每个case都加了break
