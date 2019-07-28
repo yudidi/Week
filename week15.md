@@ -11,8 +11,9 @@ https://leetcode.com/problems/maximum-subarray/
 
 * 应用
 
-1. 股票最大收益不是"低价买进，高价卖出"
-http://yeziahehe.com/2017/09/21/MaximumSubArray/ Subarray
+股票最大收益不是"低价买进，高价卖出"
+
+http://yeziahehe.com/2017/09/21/MaximumSubArray/
 
 # Tip
 
