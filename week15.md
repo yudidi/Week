@@ -5,8 +5,24 @@ Algorithm、Review、Tip、Share 简称ARTS
 # Algorithm
 https://leetcode.com/problems/maximum-subarray/
 
-```
+* 暴力解法
 
+```
+func minSubArrayLen(s int, nums []int) int {
+    minLen := len(nums) + 1
+    for i,_ := range nums{
+        sum := 0 // [i..j] i=[0..n] j=[0..n]
+        for j := i;j<len(nums);j++{ // 遍历全部情况
+            sum += nums[j] // [0] [0,1] // [1] [1,2]
+            if sum >= s{
+                if (j-i+1) < minLen { // j-i+1,[i..j]的数组长度
+                    minLen = j-i+1
+                }
+            }
+        }
+    }
+    return minLen
+}
 ```
 
 * 应用
