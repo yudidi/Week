@@ -10,7 +10,6 @@ https://leetcode.com/problems/minimum-size-subarray-sum/
 
 寻找一个最短的子数组，这个子数组的和sum >= s.
 
-
 * 暴力解法
 
 ```
@@ -19,7 +18,7 @@ func minSubArrayLen(s int, nums []int) int {
     for i,_ := range nums{
         sum := 0 // [i..j] i=[0..n] j=[0..n]
         for j := i;j<len(nums);j++{ // 遍历全部情况
-            sum += nums[j] // [0] [0,1] // [1] [1,2]
+            sum += nums[j] // [0] [0,1] [0,1,2] // [1] [1,2] // 优化: [0,1,2],重复计算[1,2] 
             if sum >= s{
                 if (j-i+1) < minLen { // YC: j-i+1,[i..j]的数组长度. such as. [0,1]长度是2.
                     minLen = j-i+1
@@ -31,11 +30,14 @@ func minSubArrayLen(s int, nums []int) int {
 }
 ```
 
-* 应用
+* 优化1: 减少重复计算，用一个东西记忆计算过的值. // 记忆化迭代
 
-股票最大收益不是"低价买进，高价卖出"
+sum[i] = sum[i-] + nums[i]
+sum[i..j] = sum[j] - sum[i] + nums[i]
 
-http://yeziahehe.com/2017/09/21/MaximumSubArray/
+```
+```
+
 
 # Tip
 
