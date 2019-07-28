@@ -21,7 +21,7 @@ func minSubArrayLen(s int, nums []int) int {
         for j := i;j<len(nums);j++{ // 遍历全部情况
             sum += nums[j] // [0] [0,1] // [1] [1,2]
             if sum >= s{
-                if (j-i+1) < minLen { // j-i+1,[i..j]的数组长度
+                if (j-i+1) < minLen { // YC: j-i+1,[i..j]的数组长度. such as. [0,1]长度是2.
                     minLen = j-i+1
                 }
             }
