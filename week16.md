@@ -13,3 +13,9 @@ func maxSubArray(nums []int) int {
     // 2. 同理数组的最后1位一定也大于0。
 }
 ```
+
+* 应用
+
+股票最大收益不是"低价买进，高价卖出"
+
+http://yeziahehe.com/2017/09/21/MaximumSubArray/
