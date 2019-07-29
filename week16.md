@@ -19,3 +19,13 @@ func maxSubArray(nums []int) int {
 股票最大收益不是"低价买进，高价卖出"
 
 http://yeziahehe.com/2017/09/21/MaximumSubArray/
+
+
+
+# Tip
+
+* 【Golang】去除slice中重复的元素，认识空struct
+
+https://www.jianshu.com/p/5430eebd715c
+
+
