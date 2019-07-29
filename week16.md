@@ -29,3 +29,12 @@ http://yeziahehe.com/2017/09/21/MaximumSubArray/
 https://www.jianshu.com/p/5430eebd715c
 
 
+# Share
+
+## 订单状态转换，及其编码实现
+
+http://www.woshipm.com/pd/594751.html?winzoom=1
+https://blog.csdn.net/yangstarss/article/details/80493464
+
+[operator和processor组件],订单状态流转和对应的业务处理解耦
+https://www.jianshu.com/p/fe292b15a06a
