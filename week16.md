@@ -38,3 +38,6 @@ https://blog.csdn.net/yangstarss/article/details/80493464
 
 [operator和processor组件],订单状态流转和对应的业务处理解耦
 https://www.jianshu.com/p/fe292b15a06a
+
+https://www.sohu.com/a/255500725_483392
+
