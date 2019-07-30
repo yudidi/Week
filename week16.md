@@ -28,6 +28,7 @@ http://yeziahehe.com/2017/09/21/MaximumSubArray/
 
 https://www.jianshu.com/p/5430eebd715c
 
+* 数据库设计，表名，用e和r表示实体和联系
 
 # Share
 
