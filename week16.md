@@ -30,6 +30,14 @@ https://www.jianshu.com/p/5430eebd715c
 
 * 数据库设计，表名，用e和r表示实体和联系
 
+* Golang range channel、close channel 遍历和关闭
+https://blog.csdn.net/zhaominpro/article/details/77584534
+
+方法一: for
+
+方法二: range
+然后会一直阻塞当前协程，如果在其他协程中调用了close(ch),那么就会跳出for range循环。`这也就是for range的特别之处`
+
 # Share
 
 ## 订单状态转换，及其编码实现
