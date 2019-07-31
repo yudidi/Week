@@ -49,7 +49,7 @@ go vet -composites=false
 `call of getMapLength copies lock value: sync.Map contains sync.Mutex`
 
 https://medium.com/golangspec/detect-locks-passed-by-value-in-go-efb4ac9a3f2b
-
+https://studygolang.com/articles/9619
 
 # Share
 
