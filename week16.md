@@ -1,5 +1,5 @@
-
-
+Algorithm、Review、Tip、Share 简称ARTS 
+1.每周至少做一个 leetcode 的算法题 2.阅读并点评至少一篇英文技术文章 3.学习至少一个技术技巧 4.分享一篇有观点和思考的技术文章
 
 
 https://leetcode.com/problems/maximum-subarray/submissions/
@@ -20,6 +20,8 @@ func maxSubArray(nums []int) int {
 
 http://yeziahehe.com/2017/09/21/MaximumSubArray/
 
+# Review
+https://medium.com/golangspec/detect-locks-passed-by-value-in-go-efb4ac9a3f2b
 
 
 # Tip
