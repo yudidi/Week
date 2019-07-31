@@ -38,6 +38,9 @@ https://blog.csdn.net/zhaominpro/article/details/77584534
 方法二: range
 然后会一直阻塞当前协程，如果在其他协程中调用了close(ch),那么就会跳出for range循环。`这也就是for range的特别之处`
 
+* 扩展go sync.map的length和delete方法
+
+
 # Share
 
 ## 订单状态转换，及其编码实现
