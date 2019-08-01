@@ -83,6 +83,9 @@ https://play.golang.org/p/RJbPSgBY6gZ
 * golang的嵌套事务管理
 https://www.jianshu.com/p/2a144332c3db
 
+* validator
+> https://github.com/go-playground/validator
+
 # Share
 
 ## 订单状态转换，及其编码实现
