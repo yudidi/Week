@@ -66,6 +66,11 @@ nil for JSON null
 
 https://godoc.org/encoding/json#Unmarshal
 
+* Partly JSON unmarshal into a map in Go
+
+https://stackoverflow.com/questions/11066946/partly-json-unmarshal-into-a-map-in-go
+https://play.golang.org/p/RJbPSgBY6gZ
+
 # Share
 
 ## 订单状态转换，及其编码实现
