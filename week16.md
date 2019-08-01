@@ -71,6 +71,11 @@ https://godoc.org/encoding/json#Unmarshal
 https://stackoverflow.com/questions/11066946/partly-json-unmarshal-into-a-map-in-go
 https://play.golang.org/p/RJbPSgBY6gZ
 
+* Mysql死锁引起的事务未回滚问题
+
+> https://www.jianshu.com/p/c90aa25fe648
+> https://docs.oracle.com/cd/E17952_01/mysql-5.7-en/innodb-parameters.html
+
 # Share
 
 ## 订单状态转换，及其编码实现
