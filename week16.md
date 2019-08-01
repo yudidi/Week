@@ -76,6 +76,10 @@ https://play.golang.org/p/RJbPSgBY6gZ
 > https://www.jianshu.com/p/c90aa25fe648
 > https://docs.oracle.com/cd/E17952_01/mysql-5.7-en/innodb-parameters.html
 
+* Transaction And Lock--事务中使用return会回滚事务吗？
+
+> https://www.cnblogs.com/TeyGao/p/3522965.html
+
 * golang的嵌套事务管理
 https://www.jianshu.com/p/2a144332c3db
 
