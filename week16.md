@@ -53,6 +53,19 @@ go vet -composites=false
 https://medium.com/golangspec/detect-locks-passed-by-value-in-go-efb4ac9a3f2b
 https://studygolang.com/articles/9619
 
+* Unmarshal
+
+```
+bool, for JSON booleans
+float64, for JSON numbers
+string, for JSON strings
+[]interface{}, for JSON arrays
+map[string]interface{}, for JSON objects
+nil for JSON null
+```
+
+https://godoc.org/encoding/json#Unmarshal
+
 # Share
 
 ## 订单状态转换，及其编码实现
