@@ -14,6 +14,34 @@ func maxSubArray(nums []int) int {
 }
 ```
 
+* 根据min size subarray的思路，brute force, 把全部结果放入一个map(k:i-j v:sums[i..j]) 得到一个"Memory Limit Exceeded"
+```
+// 遍历全部的组合[i..j],得到sums = map[start,end]sums, log(n2) 
+// 遍历sums,取最小的一个即可
+func maxSubArray(nums []int) int {
+    m := make(map[string]int)
+    for i := 0;i<len(nums);i++{
+         sum := 0 // YC:初始化为nums[i] or 0
+         j := i 
+         for ;j<len(nums);j++{ // [0] [0+1] [0+1+2]
+           sum += nums[j]
+           m[strconv.Itoa(i)+"-"+strconv.Itoa(j)] = sum
+         }
+        
+    }
+    maxSumKey := "0-0"
+    for k,v := range m{
+        if v > m[maxSumKey]{
+            maxSumKey = k
+        }
+    }
+    return m[maxSumKey]
+}
+// test case
+[-2,1,-3,4,-1,2,1,-5,4]
+[1]
+```
+
 * 应用
 
 股票最大收益不是"低价买进，高价卖出"
