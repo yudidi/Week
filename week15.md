@@ -30,9 +30,10 @@ func minSubArrayLen(s int, nums []int) int {
 }
 ```
 
-* 优化1: 减少重复计算，用一个东西记忆计算过的值. // 记忆化迭代
+* 优化1: 减少重复计算，用一个东西记忆计算过的值. // 记忆化搜索
 
-sum[i] = sum[i-] + nums[i]
+sum[i] = sum[i-1] + nums[i]
+
 sum[i..j] = sum[j] - sum[i] + nums[i]
 
 ```
