@@ -68,7 +68,11 @@ UNION
 SELECT * FROM product_search_relation WHERE query_type = ? AND query_value = ? AND is_recommend = TRUE`
 ```
 
-## IN 后面接多个字段的多种情况
+## IN 后面接多个字段的多种情况, 但是不能替代Union
+
+```
+SELECT * FROM xxxx WHERE ( a,b,c) IN ((?,?,TRUE),(?,?,TRUE),(?,?,TRUE))
+```
 
 ## panic导致事务没有结束，导致死锁
 
