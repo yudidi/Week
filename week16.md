@@ -163,7 +163,7 @@ https://www.jianshu.com/p/2a144332c3db
 
 # Share
 
-## 订单状态转换，及其编码实现
+## 订单状态转换，及其编码实现 [TODO] 已经上个公司框架slipper的processor处理原理
 
 http://www.woshipm.com/pd/594751.html?winzoom=1
 https://blog.csdn.net/yangstarss/article/details/80493464
