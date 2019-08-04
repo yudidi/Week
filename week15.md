@@ -57,15 +57,18 @@ A2: 其他在基础数据上衍生的接口，不必覆盖测试
 ## sql语句编写时，需要考虑是否能使用索引
 
 ```
+// 语句简洁，但是没有用到索引
 SELECT * FROM product_search_relation WHERE ( query_type, query_value, is_recommend ) IN ((?,?,TRUE),(?,?,TRUE),(?,?,TRUE));
 
-//
+// 语句较多，但是用到了索引，反而效率更高
 SELECT * FROM product_search_relation WHERE query_type = ? AND query_value = ? AND is_recommend = TRUE
 UNION
 SELECT * FROM product_search_relation WHERE query_type = ? AND query_value = ? AND is_recommend = TRUE
 UNION
 SELECT * FROM product_search_relation WHERE query_type = ? AND query_value = ? AND is_recommend = TRUE`
 ```
+
+## IN 后面接多个字段的多种情况
 
 ## panic导致事务没有结束，导致死锁
 
