@@ -63,7 +63,30 @@ func maxSubArray(nums []int) int {
 // test case
 [-2,1,-3,4,-1,2,1,-5,4]
 [1]
-[-1]
+[-1] // bug
+```
+
+* fix bug: 存在负数的情况，返回了默认值0
+
+```
+// 不需要临时的存储m
+func maxSubArray(nums []int) int {
+    if len(nums) == 0 {
+        return 0
+    }
+    maxSum := nums[0]
+    for i := 0;i<len(nums);i++{
+         sum := 0
+         j := i
+         for ;j<len(nums);j++{ // [0] [0+1] [0+1+2]
+           sum += nums[j]
+             if sum > maxSum{
+                 maxSum = sum
+             }
+         }
+    }
+    return maxSum
+}
 ```
 
 * 应用
