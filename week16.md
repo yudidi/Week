@@ -42,6 +42,30 @@ func maxSubArray(nums []int) int {
 [1]
 ```
 
+* 改进：并不需要多余的存储空间，移除m，使用maxSum存储最新的最大sum即可
+
+```
+// 不需要临时的存储m
+func maxSubArray(nums []int) int {
+    maxSum := 0
+    for i := 0;i<len(nums);i++{
+         sum := 0
+         j := i
+         for ;j<len(nums);j++{ // [0] [0+1] [0+1+2]
+           sum += nums[j]
+             if sum > maxSum{
+                 maxSum = sum
+             }
+         }
+    }
+    return maxSum
+}
+// test case
+[-2,1,-3,4,-1,2,1,-5,4]
+[1]
+[-1]
+```
+
 * 应用
 
 股票最大收益不是"低价买进，高价卖出"
