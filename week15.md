@@ -37,6 +37,34 @@ sum[i] = sum[i-1] + nums[i] // sum[0..i]的连续子数组的和
 sum[i..j] = sum[j] - sum[i] + nums[i] // sum[i..j]任意一段连续子数组的和
 
 ```
+// brute force with no repeated calculations, otherwise, use a slice to store some result.
+func minSubArrayLen(s int, nums []int) int {
+    if len(nums) == 0{
+        return 0
+    }
+    sums := make([]int,len(nums))
+    sums[0] = nums[0]
+    // inti sums
+    for i := 1;i<len(nums);i++{
+        sums[i] = sums[i-1] + nums[i] // sum[1] = nums[1] + sums[0]
+    }
+    // brute force
+    minLen := len(nums) + 1
+    for i,_ := range nums{
+        for j := i;j<len(nums);j++{ // 遍历全部情况
+            sum := sums[j] - sums[i] + nums[i] // sum[i..j]
+            if sum >= s{
+                if (j-i+1) < minLen {
+                    minLen = j-i+1
+                }
+            }
+        }
+    }
+    if minLen == len(nums) + 1{
+        return 0 // not found the subarray
+    }
+    return minLen
+}
 ```
 
 
@@ -99,6 +127,13 @@ func main() {
 	fmt.Println(sexMapping[i])
 }
 
+// test case
+7
+[2,3,1,2,4,3]
+100
+[]
+3
+[1,1]
 ```
 
 你的map里的key 1的默认类型是int
