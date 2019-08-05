@@ -46,6 +46,18 @@ PS. 我们公司的测试数据库是一个docker启动的mysql，所有的http�
 golang删除slice中特定条件的元素，优化版
 https://blog.csdn.net/liyunlong41/article/details/85132603
 
+// 20190805, 相同场景优化: 有2个slice,s1和s2,把s1中所有包含在s2中的元素去掉。
+```
+for i := 0; i < len(tmp.List); i++ {
+    for _, hide := range hideInsureCodes {
+        if tmp.List[i].InsureCode == hide {
+            tmp.List = append(tmp.List[:i], tmp.List[i+1:]...)
+            i--
+        }
+    }
+}
+```
+
 # Share
 
 https://codeburst.io/unit-testing-for-rest-apis-in-go-86c70dada52d
