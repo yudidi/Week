@@ -14,6 +14,19 @@
 		}
 	}
 ```
+
+* 优化为，每趟删除一个hide元素
+```
+for _, hide := range insureCodesToHide { // 每趟删除一个hide元素
+	for i, v := range tmp.List {
+		if v.InsureCode == hide {
+			tmp.List = append(tmp.List[:i], tmp.List[i+1:]...)
+			break
+		}
+	}
+}
+```
+
 > https://github.com/yudidi/Week/blob/master/week3.md#tips
 
 # Tip
