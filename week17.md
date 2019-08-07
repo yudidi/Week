@@ -42,3 +42,9 @@ A: 需要第三方提供查询接口，用于查询订单状态
 
 
 * 需求做到后面，越来越多的需求开始交叉影响，导致新需求越做越慢。
+
+# Share
+
+* 软件项目为什么越做越慢？ - 知乎
+
+> https://www.google.com/search?ei=p4xKXYnwC5X1-gTJtaHgDg&q=%E6%96%B0%E9%9C%80%E6%B1%82%E8%B6%8A%E5%81%9A%E8%B6%8A%E6%85%A2+%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91&oq=%E6%96%B0%E9%9C%80%E6%B1%82%E8%B6%8A%E5%81%9A%E8%B6%8A%E6%85%A2+%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91&gs_l=psy-ab.3...12292.14322..14516...0.0..1.678.2393.3-2j1j2......0....1..gws-wiz.GnzfuIEeFV8&ved=&uact=5
