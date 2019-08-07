@@ -55,6 +55,9 @@ https://blog.csdn.net/qian123shuai/article/details/84197652
 
 > https://36kr.com/p/5130526
 
+* 优秀的开发文档写作思路 - 微信支付文档
+
+https://pay.weixin.qq.com/wiki/doc/api/jsapi.php?chapter=23_6&index=4
 
 # 业务
 
