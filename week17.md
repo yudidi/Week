@@ -59,7 +59,11 @@ https://blog.csdn.net/qian123shuai/article/details/84197652
 
 https://pay.weixin.qq.com/wiki/doc/api/jsapi.php?chapter=23_6&index=4
 
+* nginx 的转发过程。
+
 # 业务
 
 * 如何看待人民币汇率破七，你有什么想法？
+
+
 
