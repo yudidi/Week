@@ -43,11 +43,58 @@ for _, hide := range insureCodesToHide { // 每趟删除一个hide元素
 
 ## 暴力解法有错，和标准解法不一致
 
-应该是三层循环，不是2层循环
+三层循环可以完成一些剪枝操作，不是2层循环
 
 https://leetcode.com/problems/minimum-size-subarray-sum/solution/
 
+```
+// 2层循环枚举全部情况
+func minSubArrayLen(s int, nums []int) int {
+	minLen := len(nums) + 1
+	for i, _ := range nums {
+		sum := 0                         // [i..j] i=[0..n] j=[0..n]
+		for j := i; j < len(nums); j++ { // 遍历全部情况
+			sum += nums[j] // [0] [0,1] // [1] [1,2]
+			fmt.Println(i,j,sum)
+			if sum >= s {
+				if (j - i + 1) < minLen { // j-i+1,[i..j]的数组长度
+					minLen = j - i + 1
+				}
+			}
+		}
+	}
+	return minLen
+}
+
+// 3层循环，比较易懂，且break可以剪枝
+func minSubArrayLen(s int, nums []int) int {
+	n := len(nums)
+	minLen := n + 1
+	for i, _ := range nums {
+
+		for j := i; j < n; j++ {
+			sum := 0
+			for k := i; k <= j; k++ {
+				sum += nums[k]
+			}
+			fmt.Println(i, j, sum)
+			if sum >= s {
+				if (j - i + 1) < minLen { // j-i+1,[i..j]的数组长度
+					minLen = j - i + 1
+					 break  
+					 // YW: Found the smallest subarray with sum>=s starting with index i, hence move to next index
+					 // 
+				}
+			}
+		}
+	}
+	return minLen
+}
+
+```
+
 > https://play.golang.org/p/f7a7UCAD0mn
+> https://play.golang.org/p/LFqPPV9d8n7
 
 # Tip
 
