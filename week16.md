@@ -121,6 +121,15 @@ https://stackoverflow.com/questions/52943450/go-routine-for-range-over-channels
 
 * 扩展go sync.map的length和delete方法
 
+* 一个错误的获取sync.Map的length的方法，因为sync.Map作为函数参数，会导致锁问题，不能通过go vet
+```
+func getMapLength(m sync.Map) (len int) {
+	m.Range(func(key, value interface{}) bool {
+		len++
+		return true
+	})
+	return len
+```
 
 *
 go vet -composites=false
