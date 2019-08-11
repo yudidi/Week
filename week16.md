@@ -1,9 +1,11 @@
 Algorithm、Review、Tip、Share 简称ARTS 
 1.每周至少做一个 leetcode 的算法题 2.阅读并点评至少一篇英文技术文章 3.学习至少一个技术技巧 4.分享一篇有观点和思考的技术文章
 
+# Algorithm
 
 https://leetcode.com/problems/maximum-subarray/submissions/
 
+最大连续子数组
 
 ```
 func maxSubArray(nums []int) int {
@@ -41,7 +43,6 @@ func maxSubArray(nums []int) int {
 [-2,1,-3,4,-1,2,1,-5,4]
 [1]
 ```
-
 * 改进：并不需要多余的存储空间，移除m，使用maxSum存储最新的最大sum即可
 
 ```
@@ -63,10 +64,10 @@ func maxSubArray(nums []int) int {
 // test case
 [-2,1,-3,4,-1,2,1,-5,4]
 [1]
-[-1] // bug
+[-1] // bug: 应该返回负数-1，而不是默认值0
 ```
 
-* fix bug: 存在负数的情况，返回了默认值0
+* fix bug
 
 ```
 // 不需要临时的存储m
