@@ -8,7 +8,7 @@ https://leetcode.com/problems/minimum-size-subarray-sum/
 
 * 题意
 
-寻找一个最短的连续子数组，这个子数组的和sum >= s.
+寻找和大于s的最短的连续子数组
 
 * 暴力解法
 
