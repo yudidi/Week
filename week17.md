@@ -40,6 +40,13 @@ for _, hide := range insureCodesToHide { // 每趟删除一个hide元素
 
 > https://github.com/yudidi/Week/blob/master/week3.md#tips
 
+
+## 暴力解法有错，和标准解法不一致
+
+应该是三层循环，不是2层循环
+
+https://leetcode.com/problems/minimum-size-subarray-sum/solution/
+
 # Tip
 
 * Q: 第三方的回调不及时，导致订单的支付状态，在我方和第三方的状态不一致,支付状态如何更改呢。
