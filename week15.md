@@ -12,13 +12,15 @@ https://leetcode.com/problems/minimum-size-subarray-sum/
 
 * 暴力解法
 
+连续子数组全部的组合: [i..j] 起点=[0..n] 终点=[0..n]
+
 ```
 func minSubArrayLen(s int, nums []int) int {
     minLen := len(nums) + 1
-    for i,_ := range nums{
-        sum := 0 // [i..j] i=[0..n] j=[0..n]
-        for j := i;j<len(nums);j++{ // 遍历全部情况
-            sum += nums[j] // [0] [0,1] [0,1,2] // [1] [1,2] // 优化: [0,1,2],重复计算[1,2] 
+    for i,_ := range nums{ // 起点
+        sum := 0 
+        for j := i;j<len(nums);j++{ // 终点
+            sum += nums[j] // 第一趟 0开头: [0] [0,1] [0,1,2]  // 第二趟 1开头: [1] [1,2] // 重复计算:第二趟的[1,2]，包含在第一趟[0,1,2]
             if sum >= s{
                 if (j-i+1) < minLen { // YC: j-i+1,[i..j]的数组长度. such as. [0,1]长度是2.
                     minLen = j-i+1
