@@ -1,6 +1,17 @@
 
 # Algrithm
 
+* 题意
+最短的连续子数组
+
+* 优化： 滑动窗口
+
+> 接https://github.com/yudidi/Week/blob/master/week15.md#algorithm
+
+https://leetcode.com/problems/minimum-size-subarray-sum/
+
+
+* 
 ```
 // 2. remove insureCodesToHide from tmp.List
 	for i := 0; i < len(tmp.List); i++ {
