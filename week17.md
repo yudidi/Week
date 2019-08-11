@@ -47,6 +47,8 @@ for _, hide := range insureCodesToHide { // 每趟删除一个hide元素
 
 https://leetcode.com/problems/minimum-size-subarray-sum/solution/
 
+> https://play.golang.org/p/f7a7UCAD0mn
+
 # Tip
 
 * Q: 第三方的回调不及时，导致订单的支付状态，在我方和第三方的状态不一致,支付状态如何更改呢。
