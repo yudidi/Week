@@ -70,8 +70,7 @@ func minSubArrayLen(s int, nums []int) int {
 func minSubArrayLen(s int, nums []int) int {
 	n := len(nums)
 	minLen := n + 1
-	for i, _ := range nums {
-
+	for i, _ := range nums { // 每趟寻找i开头的最短子数组
 		for j := i; j < n; j++ {
 			sum := 0
 			for k := i; k <= j; k++ {
@@ -83,7 +82,8 @@ func minSubArrayLen(s int, nums []int) int {
 					minLen = j - i + 1
 					 break  
 					 // YW: Found the smallest subarray with sum>=s starting with index i, hence move to next index
-					 // 
+					 // 因为是寻找 最短子数组，所以就是i开头最短的子数组，如果后续更长的子数组也符合，那也是这个子数组最短
+					 // 如果是其他子数组最短，一定不是i开头，而是i之后的元素开头，所以已经找到了i开头的最短子数组，break
 				}
 			}
 		}
