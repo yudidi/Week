@@ -56,3 +56,6 @@ mysql> select substring_index('www.example.com', '.', -2);
   `notify_at` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
 ```
 
+* Q: 如何防止重复发送消息。 生产不重复，消费不重复。
+
+
