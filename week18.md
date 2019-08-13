@@ -27,3 +27,32 @@ mysql> select substring_index('www.example.com', '.', -2);
 +-------------------------------------------------+
 ```
 > https://www.cnblogs.com/zdz8207/p/3765073.html
+
+## 任务调度框架，执行思路
+
+借鉴openaccount的task调度框架，基于一个日志表log，进行生产和消费消息。
+
+* 生产者
+往log表插入task
+
+* 消费者
+从log表读取task，根据task类型做不同处理。
+
+编写一个统一的消费函数，封装以下共同逻辑：
+1. task执行前统一修改状态。task的状态更新: 0:待处理,1:处理中,2:处理成功,3:处理失败。
+2. task执行后的统一更新状态。
+3. task错误信息的记录。
+
+* 要求：该log表能够兼容所有类型的task的存储。
+```
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `type` varchar(32) NOT NULL COMMENT 'private:私信,template:模板消息',
+  `user_code` varchar(32) NOT NULL,
+  `mobile` varchar(32) NOT NULL DEFAULT '',
+  `content` text COMMENT '内容',
+  `status` tinyint(4) NOT NULL DEFAULT '0' COMMENT '0:待处理,1:处理中,2:处理成功,3:处理失败',
+  `additional` text COMMENT '错误信息',
+  `create_at` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `notify_at` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+```
+
