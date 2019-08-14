@@ -58,4 +58,8 @@ mysql> select substring_index('www.example.com', '.', -2);
 
 * Q: 如何防止重复发送消息。 生产不重复，消费不重复。
 
+## 系统设计
+
+go语言实现分布式crontab任务系统
+> https://blog.csdn.net/oXiaoBuDing/article/details/89085351
 
