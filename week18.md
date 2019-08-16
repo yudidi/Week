@@ -75,4 +75,4 @@ https://juejin.im/post/5c55ac0bf265da2da771a216
 ## select 需要加rollback吗 mysql
 
 
-
+https://stackoverflow.com/questions/28614571/why-do-i-need-to-rollback-a-select-in-mysql-innodb
