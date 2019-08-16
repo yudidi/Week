@@ -76,3 +76,12 @@ https://juejin.im/post/5c55ac0bf265da2da771a216
 
 
 https://stackoverflow.com/questions/28614571/why-do-i-need-to-rollback-a-select-in-mysql-innodb
+
+
+## mysql update with select 
+
+https://stackoverflow.com/questions/4429319/you-cant-specify-target-table-for-update-in-from-clause
+
+```
+SELECT id FROM ( SELECT * FROM insure_insurant) AS tmp_table 
+```
