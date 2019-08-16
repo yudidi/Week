@@ -72,3 +72,7 @@ c.发现存活的客户端
 
 https://juejin.im/post/5c55ac0bf265da2da771a216
 
+## select 需要加rollback吗 mysql
+
+
+
