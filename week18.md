@@ -63,3 +63,12 @@ mysql> select substring_index('www.example.com', '.', -2);
 go语言实现分布式crontab任务系统
 > https://blog.csdn.net/oXiaoBuDing/article/details/89085351
 
+## 分布式任务调度
+* 任务调度系统 1.0
+* 任务调度系统 2.0
+a. 群首选举
+b. 脑裂问题
+c.发现存活的客户端
+
+https://juejin.im/post/5c55ac0bf265da2da771a216
+
