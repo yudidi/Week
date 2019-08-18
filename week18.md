@@ -92,3 +92,13 @@ https://stackoverflow.com/questions/4429319/you-cant-specify-target-table-for-up
 ```
 SELECT id FROM ( SELECT * FROM insure_insurant) AS tmp_table 
 ```
+
+## Share
+
+* 整洁架构之道
+
+阅读该书[推荐序言2]部分，了解到几个概念。
+1. 分离职责
+2. 关注点
+软件架构之分离关注点
+
