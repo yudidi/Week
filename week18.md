@@ -99,6 +99,8 @@ SELECT id FROM ( SELECT * FROM insure_insurant) AS tmp_table
 
 阅读该书[推荐序言2]部分，了解到几个概念。
 1. 分离职责
-2. 关注点
-软件架构之分离关注点
+2. 关注点分离。 看到一篇文章说得比较好:
+> 软件架构之分离关注点 https://zhuanlan.zhihu.com/p/54625074
+
+TODO 总结业务需求，归类，分离业务中的变与不变，把不变的部分沉淀到下来(业务中台)
 
