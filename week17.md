@@ -51,14 +51,15 @@ https://leetcode.com/problems/minimum-size-subarray-sum/solution/
 // 2层循环枚举全部情况
 func minSubArrayLen(s int, nums []int) int {
 	minLen := len(nums) + 1
-	for i, _ := range nums {
-		sum := 0                         // [i..j] i=[0..n] j=[0..n]
-		for j := i; j < len(nums); j++ { // 遍历全部情况
+	for i, _ := range nums { // 每趟都寻找i开头的最短子数组
+		sum := 0 
+		for j := i; j < len(nums); j++ {
 			sum += nums[j] // [0] [0,1] // [1] [1,2]
 			fmt.Println(i,j,sum)
 			if sum >= s {
 				if (j - i + 1) < minLen { // j-i+1,[i..j]的数组长度
 					minLen = j - i + 1
+					break // YW: 剪枝
 				}
 			}
 		}
