@@ -4,7 +4,8 @@ https://leetcode.com/problems/maximum-subarray/
 
 * brute force: https://github.com/yudidi/Week/blob/master/week16.md#algorithm
 
-共计n*(n+1)/2 个子数组
+假设数组的长度为n，就是将子数组的开始坐标和结束坐标都遍历一下，这样共有`C(2/n)`种组合方式
+
 
 * 优化解法：（Kadane算法 / 动态规划 / 分治法）
 
