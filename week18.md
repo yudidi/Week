@@ -2,9 +2,15 @@
 
 https://leetcode.com/problems/maximum-subarray/
 
-* 优化解法：分治法求解
+* brute force: https://github.com/yudidi/Week/blob/master/week16.md#algorithm
 
-https://blog.csdn.net/lw_power/article/details/80892362
+共计n*(n+1)/2 个子数组
+
+* 优化解法：（Kadane算法 / 动态规划 / 分治法）
+
+
+
+https://cloud.tencent.com/developer/article/1403056
 
 
 # Tip
