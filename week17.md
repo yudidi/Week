@@ -41,9 +41,9 @@ for _, hide := range insureCodesToHide { // 每趟删除一个hide元素
 > https://github.com/yudidi/Week/blob/master/week3.md#tips
 
 
-## 暴力解法有错，和标准解法不一致
+## 暴力解法和标准解法不一致，3层循环和2层循环均可以罗列全部子数组
 
-三层循环可以完成一些剪枝操作，不是2层循环
+`YC:没有进行剪枝操作`
 
 https://leetcode.com/problems/minimum-size-subarray-sum/solution/
 
@@ -54,7 +54,7 @@ func minSubArrayLen(s int, nums []int) int {
 	for i, _ := range nums { // 每趟都寻找i开头的最短子数组
 		sum := 0 
 		for j := i; j < len(nums); j++ {
-			sum += nums[j] // [0] [0,1] // [1] [1,2]
+			sum += nums[j] // [0] [0,1] [0,1,2] // [1] [1,2]
 			fmt.Println(i,j,sum)
 			if sum >= s {
 				if (j - i + 1) < minLen { // j-i+1,[i..j]的数组长度
@@ -67,14 +67,14 @@ func minSubArrayLen(s int, nums []int) int {
 	return minLen
 }
 
-// 3层循环，比较易懂，且break可以剪枝
+// 3层循环，比较易懂
 func minSubArrayLen(s int, nums []int) int {
 	n := len(nums)
 	minLen := n + 1
-	for i, _ := range nums { // 每趟寻找i开头的最短子数组
-		for j := i; j < n; j++ {
+	for i, _ := range nums { // 选子数组起点i
+		for j := i; j < n; j++ { // 选子数组终点j
 			sum := 0
-			for k := i; k <= j; k++ {
+			for k := i; k <= j; k++ { // 子数组[i..j]求和
 				sum += nums[k]
 			}
 			fmt.Println(i, j, sum)
@@ -83,9 +83,7 @@ func minSubArrayLen(s int, nums []int) int {
 					minLen = j - i + 1
 					 break  
 					 // YW: Found the smallest subarray with sum>=s starting with index i, hence move to next index
-					 // 因为是寻找 最短子数组，所以就是i开头最短的子数组，如果后续更长的子数组也符合，那也是这个子数组最短
-					 // 如果是其他子数组最短，一定不是i开头，而是i之后的元素开头，所以已经找到了i开头的最短子数组，break
-				}
+					 // 此时子数组是第一个满足的子数组，也是最短的。因为是寻找最短子数组，如果不break继续j++,那么之后找到更长的子数组				}
 			}
 		}
 	}
