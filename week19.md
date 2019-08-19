@@ -19,5 +19,8 @@ ALTER TABLE `insure_family_member` MODIFY COLUMN `user_relation` VARCHAR(128) DE
 
 ```
 
+* 毕竟在 MySQL 中认为 NULL 代表着“未知”。 
+在 SQL 中，任何值与 NULL 的比较返回值都是 NULL 而不是 TRUE, 就算 NULL 与 NULL 的比较也是返回 NULL。
+
 MySQL 唯一性约束与 NULL
 > https://yemengying.com/2017/05/18/mysql-unique-key-null/
