@@ -24,3 +24,10 @@ ALTER TABLE `insure_family_member` MODIFY COLUMN `user_relation` VARCHAR(128) DE
 
 MySQL 唯一性约束与 NULL
 > https://yemengying.com/2017/05/18/mysql-unique-key-null/
+
+
+* 调度 分布式任务
+
+日志记录: 2条日志，一个起始，一个结束。
+1. 每个task需要完成哪些事情写入日志。
+2. 整个task的完成情况。
