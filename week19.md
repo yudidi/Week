@@ -72,3 +72,18 @@ func removeEmptyField(m map[string]interface{}) map[string]interface{} {
 	return m
 }
 ```
+
+* go 语言中默认的类型识别
+
+如果不声明类型的话，默认的类型都是占用64位（如果机器是32位的话，默认是32位）
+`整形默认是int64`， 浮点型默认是float64
+
+
+```
+wantM: map[string]interface{}{
+	"int":  int64(1),
+	"int":  1, // 1默认识别为int64(1)
+},
+```
+
+> https://www.jianshu.com/p/74dfcff555b3
