@@ -31,3 +31,12 @@ MySQL 唯一性约束与 NULL
 日志记录: 2条日志，一个起始，一个结束。
 1. 每个task需要完成哪些事情写入日志。
 2. 整个task的完成情况。
+
+
+* 语法：MySQL中INSERT INTO SELECT的使用
+
+```
+INSERT INTO a (field1,field2) SELECT * FROM(SELECT b.f1,c.f2 FROM b JOIN c) AS tb
+```
+
+https://www.cnblogs.com/RoadGY/archive/2011/07/22/2114088.html
