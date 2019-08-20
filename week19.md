@@ -38,5 +38,21 @@ MySQL 唯一性约束与 NULL
 ```
 INSERT INTO a (field1,field2) SELECT * FROM(SELECT b.f1,c.f2 FROM b JOIN c) AS tb
 ```
-
 https://www.cnblogs.com/RoadGY/archive/2011/07/22/2114088.html
+
+
+* structToMapByJsonTag
+
+```
+func structToMapByJsonTag(obj interface{}) (m map[string]interface{}) {
+	t := reflect.TypeOf(obj)
+	v := reflect.ValueOf(obj)
+	var data = make(map[string]interface{})
+	for i := 0; i < t.NumField(); i++ {
+		f := t.Field(i)
+		chKey := f.Tag.Get("json")
+		data[chKey] = v.Field(i).Interface()
+	}
+	return data
+}
+```
