@@ -41,7 +41,7 @@ INSERT INTO a (field1,field2) SELECT * FROM(SELECT b.f1,c.f2 FROM b JOIN c) AS t
 https://www.cnblogs.com/RoadGY/archive/2011/07/22/2114088.html
 
 
-* structToMapByJsonTag
+* structToMapByJsonTag And removeEmptyFieldForMap
 
 ```
 func structToMapByJsonTag(obj interface{}) (m map[string]interface{}) {
@@ -54,5 +54,21 @@ func structToMapByJsonTag(obj interface{}) (m map[string]interface{}) {
 		data[chKey] = v.Field(i).Interface()
 	}
 	return data
+}
+
+func removeEmptyField(m map[string]interface{}) map[string]interface{} {
+	for k, v := range m {
+		switch v.(type) {
+		case time.Time:
+			if v.(time.Time).IsZero() {
+				delete(m, k)
+			}
+		case string:
+			if v == "" {
+				delete(m, k)
+			}
+		}
+	}
+	return m
 }
 ```
