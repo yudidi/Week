@@ -101,7 +101,7 @@ wantM: map[string]interface{}{
 
 > https://www.zhihu.com/question/36509119
 
-## 数据上传方案
+## 业务打点数据上传方案
 
 1. 业务侵入型。
 问题，如果当时失败了如何处理。是否就放弃。
