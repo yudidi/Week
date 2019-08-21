@@ -87,3 +87,9 @@ wantM: map[string]interface{}{
 ```
 
 > https://www.jianshu.com/p/74dfcff555b3
+
+* Golang神奇的2006-01-02 15:04:05
+
+词法分析的一个步骤（分词）
+
+> https://www.jianshu.com/p/c7f7fbb16932
