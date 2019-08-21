@@ -93,3 +93,11 @@ wantM: map[string]interface{}{
 词法分析的一个步骤（分词）
 
 > https://www.jianshu.com/p/c7f7fbb16932
+
+
+* 在开发过程中使用git rebase还是git merge，优缺点分别是什么？
+
+主要区别是：是否会又一个额外的分支合并的merge，并且分支树也会多一个分支。
+
+> https://www.zhihu.com/question/36509119
+
