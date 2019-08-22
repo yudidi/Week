@@ -118,8 +118,13 @@ wantM: map[string]interface{}{
 ## mysql更新记录时设置自动更新时间戳
 
 ```
-`creat_time` timestamp NULL DEFAULT CURRENT_TIMESTAMP
-`update_time` timestamp NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+CREATE TABLE `document` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT COMMENT '自增id',
+  `create_time` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
+  `modified_time` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '修改时间',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB CHARSET=utf8mb4 COMMENT='资料表';
+
 ```
 
 > https://blog.csdn.net/qq_35835624/article/details/79485609
