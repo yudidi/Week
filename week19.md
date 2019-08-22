@@ -112,6 +112,7 @@ wantM: map[string]interface{}{
 
 
 
-
+## mysql如何避免写出低性能的语句。
+比如… 多表连接
 
 
