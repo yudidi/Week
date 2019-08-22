@@ -115,4 +115,12 @@ wantM: map[string]interface{}{
 ## mysql如何避免写出低性能的语句。
 比如… 多表连接
 
+## mysql更新记录时设置自动更新时间戳
+
+```
+`creat_time` timestamp NULL DEFAULT CURRENT_TIMESTAMP
+`update_time` timestamp NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+```
+
+> https://blog.csdn.net/qq_35835624/article/details/79485609
 
