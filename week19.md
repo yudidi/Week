@@ -108,6 +108,8 @@ wantM: map[string]interface{}{
 
 2. 读取数据库，定时任务上传
 问题：需要增加一个update_at字段，标记更新时间，用于判断是否有变化，再次上传。
+A: ON UPDATE CURRENT_TIMESTAMP COMMENT '修改时间'
+
 问题：需要判断定时任务的周期。判断是否需要去重，如何去重。
 
 
@@ -143,3 +145,9 @@ https://www.sensorsdata.cn/blog/20180823/
 * MOLAP ROLAP HOLAP的区别和联系
 
 https://www.jianshu.com/p/d84307151c73
+
+## 优惠券系统的设计
+
+> https://juejin.im/post/5b06851251882538b82c3e1f
+> https://www.javazhiyin.com/35163.html
+> http://ju.outofmemory.cn/entry/357802
