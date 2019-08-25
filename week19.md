@@ -1,9 +1,10 @@
-
-
+# Algrithm
 
 # Tip
 
- ```
+## mysql 唯一索引和NULL
+
+```
 CREATE TABLE `insure_family_member` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `user_id` int(10) unsigned NOT NULL DEFAULT '0' COMMENT '用户id',
