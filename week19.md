@@ -1,5 +1,54 @@
 # Algrithm
 
+* 方法一：Kadane算法
+
+找规律，一次遍历得出结果
+
+> https://leetcode.com/problems/maximum-subarray/submissions/
+
+YC: 异常的case比较多
+
+```
+// 找到规律后，一次循环
+// 1. 2个变量,max记录当前最大的累加和,curmax记录当前的累加和。max初始0，curmax初始0
+// 2. 累加，累加结果<=0,则从下一个元素重新开始累加,curmax置为初始值; > 0, 更新max为curmax.
+// test case: [] 全负
+// error case: [1]
+func maxSubArray(nums []int) int {
+    if len(nums) == 0{
+        return 0
+    }
+    // case: all items are negative.
+    var hasPositive bool
+    bigNegative := nums[0]
+    for _,v := range nums{
+        if v > bigNegative {
+           bigNegative = v
+        }
+        if v >= 0{
+            hasPositive = true
+            break
+        }
+    }
+    if !hasPositive{
+        return bigNegative
+    }
+    var curmax,max int
+    for _,v := range nums{
+        curmax += v
+        if curmax <= 0{
+            curmax = 0
+        }else{
+            if curmax > max {
+                max = curmax
+            }
+        }
+    }
+    return max
+}
+```
+
+
 # Tip
 
 ## mysql 唯一索引和NULL
