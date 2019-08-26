@@ -16,4 +16,8 @@ https://leetcode.com/problems/minimum-size-subarray-sum/solution/
 
 A: 服务化可以避免代码拷贝，同时也会引入一些问题。
 
+Q: 服务化解决的痛点，引入的问题。
+
 > https://blog.csdn.net/syaguang2006/article/details/56485002
+
+> http://www.ciotimes.com/Infrastructure/162240.html
