@@ -13,7 +13,7 @@ YC: 异常的case比较多
 // 1. 2个变量,max记录当前最大的累加和,curmax记录当前的累加和。max初始0，curmax初始0
 // 2. 累加，累加结果<=0,则从下一个元素重新开始累加,curmax置为初始值; > 0, 更新max为curmax.
 // test case: [] 全负
-// error case: [1]
+// error case: [-1]
 func maxSubArray(nums []int) int {
     if len(nums) == 0{
         return 0
