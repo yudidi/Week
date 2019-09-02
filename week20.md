@@ -5,9 +5,19 @@ https://leetcode.com/problems/minimum-size-subarray-sum/solution/
 
 * 滑动窗口/双指针 Approach #4 Using 2 pointers [Accepted]
 
+如何保证
 
 * Approach #3 Using Binary search [Accepted]
 
+```
+// 二分法
+// 关键: sums存放数组的累计和数组。 sums[i]存放[0..i-1](前i-1)元素的和。因为数组元素都是整数，所以sums是递增数组，考虑使用二分查找。
+// 审题，YW: 数组元素都是整数
+// 思路: 遍历sums,对于每个sums[i],往后二分查找sums[i]+s. 
+```
+
+* C++ lower_bound 与 upper_bound 函数
+https://www.cnblogs.com/Tang-tangt/p/9291018.html
 
 # Tip
 
