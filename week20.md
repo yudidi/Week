@@ -5,7 +5,13 @@ https://leetcode.com/problems/minimum-size-subarray-sum/solution/
 
 * 滑动窗口/双指针 Approach #4 Using 2 pointers [Accepted]
 
-如何保证
+难点
+
+1. 找到一个中间状态，找到其演进方法
+
+2. 定义初始状态
+
+如何保证滑动窗口，能够覆盖全部的子数组。
 
 * Approach #3 Using Binary search [Accepted]
 
