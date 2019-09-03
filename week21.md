@@ -14,7 +14,15 @@
 ## TODO mysql 最大连接数为1，导致某种死锁。
 
 ```
+f1(){
+this.conn.query() // 使用1个连接
+//
+f2()
+}
 
+f2(){
+this.conn.query() // 无法新增连接数，导致某种死锁TODO
+}
 ```
 
 ## mysql 不建议嵌套事务
