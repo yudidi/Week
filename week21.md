@@ -33,7 +33,6 @@ Transactions cannot be nested. This is a consequence of the implicit commit perf
 Statements that cause an implicit commit cannot be used in an XA transaction while the transaction is in an ACTIVE state.
 ```
 
-
 *  Will a mysql transaction work if multiple connections are used for the queries?
 
 https://stackoverflow.com/questions/8377566/will-a-mysql-transaction-work-if-multiple-connections-are-used-for-the-queries
@@ -41,3 +40,8 @@ https://stackoverflow.com/questions/8377566/will-a-mysql-transaction-work-if-mul
 * Behavior of transactions on multiple connections
 
 https://dba.stackexchange.com/questions/140975/behavior-of-transactions-on-multiple-connections
+
+## MySQL的嵌套事务实现
+
+https://segmentfault.com/a/1190000002411193
+
