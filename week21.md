@@ -25,7 +25,7 @@ this.conn.query() // 无法新增连接数，导致某种死锁TODO
 }
 ```
 
-## mysql 不建议嵌套事务
+## mysql 不能使用嵌套事务
 
 ```
 Transactions cannot be nested. This is a consequence of the implicit commit performed for any current transaction when you issue a START TRANSACTION statement or one of its synonyms.
