@@ -45,3 +45,6 @@ https://dba.stackexchange.com/questions/140975/behavior-of-transactions-on-multi
 
 https://segmentfault.com/a/1190000002411193
 
+## Mysql 视图用途、使用场景、性能问题及使用注意事项
+
+https://blog.csdn.net/chuangxin/article/details/84574557
