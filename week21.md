@@ -48,3 +48,7 @@ https://segmentfault.com/a/1190000002411193
 ## Mysql 视图用途、使用场景、性能问题及使用注意事项
 
 https://blog.csdn.net/chuangxin/article/details/84574557
+
+## Q: 数据库重构之路
+
+
