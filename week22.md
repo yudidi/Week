@@ -9,3 +9,10 @@
 
 
 ## sql cross join
+
+2表，笛卡尔积
+
+## mysql 字段设置default为Null好，还是“”好，
+
+数据库表某字段设置default为Null好，还是“”好，或者是Empty String好呢？
+> https://segmentfault.com/q/1010000006758650/a-1020000006759600
