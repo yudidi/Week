@@ -16,3 +16,9 @@
 
 数据库表某字段设置default为Null好，还是“”好，或者是Empty String好呢？
 > https://segmentfault.com/q/1010000006758650/a-1020000006759600
+
+## MySQL 的 null 和 not null
+
+问题 1：我字段类型是 not null，为什么我可以插入 空值？
+
+https://learnku.com/laravel/t/4741/you-may-need-to-know-about-mysqls-null-and-not-null
