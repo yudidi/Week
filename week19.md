@@ -69,6 +69,10 @@ ALTER TABLE `insure_family_member` MODIFY COLUMN `user_relation` VARCHAR(128) DE
 
 ```
 
+在唯一索引 `(`user_id`,`name`,`user_relation`)` 的情况下，不能把user_id,name相同的记录的user_relation字段设置为空，否则会违法唯一索引。
+但是业务上又需要这么做：`把关系设置为未知，也就是NULL`, 所以user_relation不能为NOT NULL,而是可以NULL(未知)。
+
+
 * 毕竟在 MySQL 中认为 NULL 代表着“未知”。 
 在 SQL 中，任何值与 NULL 的比较返回值都是 NULL 而不是 TRUE, 就算 NULL 与 NULL 的比较也是返回 NULL。
 
