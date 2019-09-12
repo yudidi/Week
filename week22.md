@@ -28,7 +28,7 @@ https://learnku.com/laravel/t/4741/you-may-need-to-know-about-mysqls-null-and-no
 Q：因为not null 的效率比 null 的效率高，所以全部设置not null,导致频繁错误 Column 'col1' cannot be null
 A：字段要么not null,要么设置Defalut=零值，一般不能设置NULL
 
-A: 有一种情况，字段需要设置NULL(未知)
+A: 有一种情况，业务要求字段需要设置NULL(未知). > https://github.com/yudidi/Week/blob/master/week19.md#mysql-%E5%94%AF%E4%B8%80%E7%B4%A2%E5%BC%95%E5%92%8Cnull
 
 在许久以前刚入职做第一个需求上线的时候，只一味注意到说是 not null 的效率比 null 的效率高。
 
