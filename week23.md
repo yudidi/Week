@@ -16,6 +16,16 @@ INSERT INTO  test4(id,cnt) VALUES
   ON DUPLICATE KEY UPDATE id = VALUES(id), cnt= VALUES(cnt)+  cnt 
 ```
 
+
+## mysql中int(3)与int(11)有什么区别吗？
+
+> https://www.cnblogs.com/yaowen/p/8862108.html
+
+对于存储和计算没有区别，只是显示效果上的区别。
+
+> https://segmentfault.com/q/1010000000257234
+
+
 ## pandas 数据分析
 
 ## Anaconda完全入门指南
