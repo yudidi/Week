@@ -26,7 +26,9 @@ INSERT INTO  test4(id,cnt) VALUES
 > https://segmentfault.com/q/1010000000257234
 
 
-## pandas 数据分析
+## pandas 数据处理教程
+
+> https://www.yiibai.com/pandas/python_pandas_series.html
 
 ## Anaconda完全入门指南
 
