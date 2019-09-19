@@ -30,6 +30,11 @@ INSERT INTO  test4(id,cnt) VALUES
 
 > https://www.yiibai.com/pandas/python_pandas_series.html
 
+### FAQ
+
+dataframe的字符类型dtypes为什么是object,而不是str？
+> https://segmentfault.com/q/1010000012226229
+
 ## Anaconda完全入门指南
 
 > https://www.jianshu.com/p/eaee1fadc1e9
