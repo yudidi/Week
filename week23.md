@@ -35,6 +35,9 @@ INSERT INTO  test4(id,cnt) VALUES
 dataframe的字符类型dtypes为什么是object,而不是str？
 > https://segmentfault.com/q/1010000012226229
 
+pandas 数据类型转换
+> https://www.cnblogs.com/onemorepoint/p/9404753.html
+
 ## Anaconda完全入门指南
 
 > https://www.jianshu.com/p/eaee1fadc1e9
