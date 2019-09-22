@@ -1,9 +1,29 @@
 # Algorithm
 
-## 数据分析相关算法
-
-
 # Tips
+
+## processon
+
+1. anaconda
+安装，数据基本清洗，数据可视化 (TODO 图可以配置label和偏移等)
+
+2. 统计学概念
+
+* mean,median,mode
+
+* 方差、标准差
+
+Q: 既然有了方差来描述变量与均值的偏离程度，那又搞出来个标准差干什么呢
+
+* 偏态与峰度
+
+* 四分位
+
+根据4分位，计算值的上界和下界。可用于判断异常值(Q3-Q1)*k,k=[1.5,3]
+
+3. 数据质量的准则
+> https://www.processon.com/mindmap/5d7f0d6ae4b0ca809fccda33
+
 
 ## insert into ... on duplicate key 多条数据问题
 
@@ -54,32 +74,9 @@ pandas 数据类型转换
 
 ## Anaconda完全入门指南
 1. 安装 
+2. 用anaconda来创建我们一个个独立的python环境
+
 > https://www.jianshu.com/p/eaee1fadc1e9
-
-## processon
-
-1. anaconda
-安装，数据基本清洗，数据可视化 (TODO 图可以配置label和偏移等)
-
-2. 统计学概念
-
-* mean,median,mode
-
-* 方差、标准差
-
-Q: 既然有了方差来描述变量与均值的偏离程度，那又搞出来个标准差干什么呢
-
-* 偏态与峰度
-
-* 四分位
-
-根据4分位，计算值的上界和下界。可用于判断异常值(Q3-Q1)*k,k=[1.5,3]
-
-3. 数据质量的准则
-
-
-> https://www.processon.com/mindmap/5d7f0d6ae4b0ca809fccda33
-
 
 # Review
 
