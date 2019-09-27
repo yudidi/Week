@@ -30,13 +30,18 @@ INSERT INTO insure_message_push(`type`,`user_code`,`content`) VALUES ('upload_se
 
 ## pandas
 
-### 字符串
+### 字符串,列修改
 
 * 截取'股票代码'第一个字符
 df['首字符'] = df['股票代码'].str[0:1]
 
+* 根据一列的值，修改另一列的值 
+> https://www.cnblogs.com/sxinfo/p/10663014.html
+
 ### series
 
+sort_values
+sort_index
 
 ### series可视化
 
