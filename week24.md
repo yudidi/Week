@@ -30,11 +30,17 @@ INSERT INTO insure_message_push(`type`,`user_code`,`content`) VALUES ('upload_se
 
 ## pandas
 
-* The Difference Between Bar Graphs and Line Graphs
+### 可视化
+
+* line,bar : The Difference Between Bar Graphs and Line Graphs
 
 Line可以同时对比多个部门的变化趋势
 
 Bar查看单一部分的变化时，数据更清晰
+
+* 箱形图
+
+来可视化每列中值的分布。> https://www.yiibai.com/pandas/python_pandas_visualization.html
 
 # Share
 
