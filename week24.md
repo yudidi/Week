@@ -30,7 +30,15 @@ INSERT INTO insure_message_push(`type`,`user_code`,`content`) VALUES ('upload_se
 
 ## pandas
 
-### 可视化
+### 字符串
+
+* 截取'股票代码'第一个字符
+df['首字符'] = df['股票代码'].str[0:1]
+
+### series
+
+
+### series可视化
 
 * line,bar : The Difference Between Bar Graphs and Line Graphs
 
