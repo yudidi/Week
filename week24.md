@@ -30,6 +30,14 @@ INSERT INTO insure_message_push(`type`,`user_code`,`content`) VALUES ('upload_se
 
 ## pandas
 
+### Pandas分组与聚合
+1.分组 (groupby)
+一、GroupBy对象：DataFrameGroupBy，SeriesGroupBy
+二、GroupBy对象支持迭代操作
+三、GroupBy对象可以转换成
+
+> https://cloud.tencent.com/developer/article/1193823
+
 ### 字符串,列修改
 
 * 截取'股票代码'第一个字符
