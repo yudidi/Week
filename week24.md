@@ -30,7 +30,11 @@ INSERT INTO insure_message_push(`type`,`user_code`,`content`) VALUES ('upload_se
 
 ## pandas
 
+* The Difference Between Bar Graphs and Line Graphs
 
+Line可以同时对比多个部门的变化趋势
+
+Bar查看单一部分的变化时，数据更清晰
 
 # Share
 
