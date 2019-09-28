@@ -35,6 +35,10 @@ INSERT INTO insure_message_push(`type`,`user_code`,`content`) VALUES ('upload_se
 
 > https://www.lizenghai.com/archives/30440.html
 
+* 决策树缺点
+
+> https://www.jianshu.com/p/69dbb042a0e3
+
 ## pandas
 
 ### Pandas分组与聚合
