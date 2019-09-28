@@ -27,6 +27,13 @@ INSERT INTO insure_message_push(`type`,`user_code`,`content`) VALUES ('upload_se
 
 > https://blog.csdn.net/czh500/article/details/90721286
 
+## 决策树模型的解释性就很强
+
+当我们发现，我们的数据中分类变量比较多，我们尝试采取决策树进行建模，
+
+具体理由：我们做出来的模型需要指导业务人员进行使用，那么要求做出来的模型的可解释要高，而决策树模型的解释性就很强，那么业务人员理解起来就会很容易，那么之后进行应用就不用再专门进行对业务人员的培训，直接让他按照模型做出来的结果进行后续的业务，会提升效率。
+
+> https://www.lizenghai.com/archives/30440.html
 
 ## pandas
 
