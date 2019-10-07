@@ -42,3 +42,11 @@
 
 > https://www.zhihu.com/search?type=content&q=%E6%98%BE%E8%91%97%E6%80%A7%E6%B0%B4%E5%B9%B3
 
+## <深入浅出统计学>
+
+### 13 假设检验
+
+* 原假设
+
+
+
