@@ -54,6 +54,13 @@ A: 显然假设不成立的概率大小。
 > https://www.zhihu.com/question/31615254/answer/149397914
 
 
+## 推论统计
+
+推论统计(inferential statistics)是借助抽样调查，从局部推断总体，以对不肯定的事物做出决策的一种统计。
+有`总体参数估计` 与 `假设检验` 两种。
+
+> https://baike.baidu.com/item/%E6%8E%A8%E8%AE%BA%E7%BB%9F%E8%AE%A1#ref_[1]_334067
+
 
 ## 数据埋点
 
