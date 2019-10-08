@@ -72,6 +72,14 @@ A: 显然假设不成立的概率大小。
 
 > http://www.woshipm.com/data-analysis/879349.html
 
+* 基于推断统计学，把握问题核心洞悉数据模式与趋势
+
+> http://www.woshipm.com/data-analysis/886082.html
+
+* 可视化数据流量地图
+
+> http://www.woshipm.com/data-analysis/894519.html
+
 # Share
 
 * 自己的思考:
