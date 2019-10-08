@@ -49,7 +49,11 @@ Algorithm、Review、Tip、Share 简称ARTS
 
 ### Q:在统计学中，假设检验中的`显著性水平`的意义是什么？
 
+A: 显然假设不成立的概率大小。
+
 > https://www.zhihu.com/question/31615254/answer/149397914
+
+
 
 # Share
 
