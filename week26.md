@@ -55,6 +55,14 @@ A: 显然假设不成立的概率大小。
 
 
 
+## 数据埋点
+
+* 数据埋点
+
+埋点的定义规范
+
+> http://www.woshipm.com/data-analysis/872543.html
+
 # Share
 
 * 自己的思考:
