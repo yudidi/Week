@@ -6,14 +6,16 @@ Algorithm、Review、Tip、Share 简称ARTS
 
 ## 接口设计
 
+直接告诉接口调用者下一步怎么做。
+
 ```
-## 判断是否绑定
+* 判断是否绑定
 
 请求路径：
 
 返回参数：
 {
-    "need_bind": <bool>	// need_bind,binded,cannot_bind。 直接告诉你下一步应该怎么做。
+    "need_bind": <bool>	// need_bind,binded,cannot_bind。 
     "unionid_exist": <bool>	// fwh|thb
 }
 ```
