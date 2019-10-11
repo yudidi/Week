@@ -4,6 +4,20 @@ Algorithm、Review、Tip、Share 简称ARTS
 
 # Tip
 
+## 接口设计
+
+```
+## 判断是否绑定
+
+请求路径：
+
+返回参数：
+{
+    "need_bind": <bool>	// need_bind,binded,cannot_bind。 直接告诉你下一步应该怎么做。
+    "unionid_exist": <bool>	// fwh|thb
+}
+```
+
 ## <赤裸裸的统计学>
 
 ### 中心极限定理
