@@ -4,9 +4,9 @@ Algorithm、Review、Tip、Share 简称ARTS
 
 # Tip
 
-## 接口设计
+## 接口设计 
 
-直接告诉接口调用者下一步怎么做。
+接口返回值能够告诉接口调用者下一步怎么做。 会更好维护。 `实战总结经验`
 
 ```
 * 判断是否绑定
@@ -19,6 +19,8 @@ Algorithm、Review、Tip、Share 简称ARTS
     "unionid_exist": <bool>	// fwh|thb
 }
 ```
+
+> https://www.cnblogs.com/sui776265233/p/9772803.html  十、Hypermedia API
 
 ## <赤裸裸的统计学>
 
