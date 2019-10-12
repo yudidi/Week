@@ -4,6 +4,14 @@ Algorithm、Review、Tip、Share 简称ARTS
 
 # Tip
 
+## INSERT IGNORE 如何处理有2个唯一索引的情况
+
+```
+INSERT IGNORE openaccount_external_user (channel,user_id,unionid,appid,openid) VALUES(?,?,?,?,?)
+UNIQUE KEY `channel` (`channel`,`user_id`)
+UNIQUE KEY `appid` (`appid`,`openid`)
+```
+
 ## 接口设计 
 
 接口返回值能够告诉接口调用者下一步怎么做。 会更好维护。 `实战总结经验`
