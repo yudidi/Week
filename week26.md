@@ -118,6 +118,24 @@ A: 显然假设不成立的概率大小。
 
 > https://www.jianshu.com/p/b791a7b37326
 
+## 其他涉猎
+
+### Titanic初试身手 
+
+* 第五步：模型选择
+1. sciket-learn算法选择的决策图. 
+
+2. 我们的任务是预测乘客是否能幸存，很明显是一个基本的二分类问题（Binary Classification)。
+可以用来处理二分类问题的模型主要有：感知机、Logistic回归、决策树、SVM和随机森林等
+
+> https://zhuanlan.zhihu.com/p/29086614
+
+### 文本分类: Toxic评论分类挑战赛
+
+最基本的文本分类问题解决方案：Logistic Regression、TF-IDF
+
+> https://zhuanlan.zhihu.com/p/33925599?edition=yidianzixun&utm_source=yidianzixun&yidian_docid=0IOif9d0
+
 # Share
 
 * 自己的思考:
