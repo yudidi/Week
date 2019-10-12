@@ -136,6 +136,8 @@ A: 显然假设不成立的概率大小。
 
 > https://zhuanlan.zhihu.com/p/33925599?edition=yidianzixun&utm_source=yidianzixun&yidian_docid=0IOif9d0
 
+> https://www.kaggle.com/yekenot/toxic-regression/code
+
 # Share
 
 * 自己的思考:
