@@ -6,6 +6,8 @@ Algorithm、Review、Tip、Share 简称ARTS
 
 ## INSERT IGNORE 如何处理有2个唯一索引的情况
 
+只有违背一个唯一索引，这个记录就不会插入
+
 ```
 INSERT IGNORE openaccount_external_user (channel,user_id,unionid,appid,openid) VALUES(?,?,?,?,?)
 UNIQUE KEY `channel` (`channel`,`user_id`)
