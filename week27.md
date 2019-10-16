@@ -24,3 +24,10 @@ nginx转发的设置
 1. python数组 元素是任意类型的
 2. python array: 指定元素类型的数组
 3. numpy.array: 也有元素类型，具有向量和矩阵特点,便于处理
+
+* 循环
+
+1. python的arange
+> 【python入门】arange()与range()的区别 https://blog.csdn.net/lyl771857509/article/details/78999925
+
+2. np.arrange: step可以是float64
