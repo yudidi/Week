@@ -19,3 +19,8 @@ nginx转发的设置
 
 ## 03-Jupyter-Notebook-Numpy-and-Matplotlib
 
+* 3种数组
+
+1. python数组 元素是任意类型的
+2. python array: 指定元素类型的数组
+3. numpy.array: 也有元素类型，具有向量和矩阵特点,便于处理
