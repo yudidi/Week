@@ -31,3 +31,5 @@ nginx转发的设置
 > 【python入门】arange()与range()的区别 https://blog.csdn.net/lyl771857509/article/details/78999925
 
 2. np.arrange: step可以是float64
+
+3. np.linspace:
