@@ -33,3 +33,7 @@ nginx转发的设置
 2. np.arrange: step可以是float64
 
 3. np.linspace:
+
+* 矩阵乘法的意义和2种理解
+
+> https://www.cnblogs.com/mhpp/p/7661068.html
