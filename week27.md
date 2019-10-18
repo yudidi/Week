@@ -46,3 +46,14 @@ nginx转发的设置
 我们管这种从材料列表转为开销表的过程，就叫做一个线性映射
 
 > https://www.cnblogs.com/mhpp/p/7661068.html
+
+## 数据库设计
+
+```
+A: 表示app用户id(记为aid), 公司有多个app
+B: 微信unionid(记为uid). 一个公司就一个uid. 
+C: 表示小程序用户id(记为xid). 公司有多个小程序
+A->B: 多对1，表示多个app用户对应1个微信uid.比如 (aid1,uid),(aid2,uid)
+C->B: 多对1, 表示多个小程序用户对应1个微信id. 比如(xid1,uid),(xid2,uid)
+A->C: 1对1，表示1个app用户 和 小程序用户 是一一对应的。比如(aid1,xid1) (aid2,xid2)
+```
