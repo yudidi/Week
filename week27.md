@@ -65,6 +65,10 @@ nginx转发的设置
 
 > https://baike.baidu.com/item/%E7%99%BE%E5%88%86%E4%BD%8D%E6%95%B0/10064171?fromtitle=percentile&fromid=12015307&fr=aladdin
 
+## 矩阵基础MOOC
+
+https://www.icourse163.org/learn/TONGJI-481001?tid=1206883240#/learn/content?type=detail&id=1211787764&cid=1214717041
+
 ## 数据库设计
 
 ```
