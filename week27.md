@@ -47,6 +47,14 @@ nginx转发的设置
 
 > https://www.cnblogs.com/mhpp/p/7661068.html
 
+* 矩阵行列式
+
+> https://blog.csdn.net/DrIcetar/article/details/81297446
+
+* 线性代数：如何求矩阵的逆矩阵
+
+> https://jingyan.baidu.com/article/da1091fb69f0b7027849d612.html
+
 ## 数据库设计
 
 ```
