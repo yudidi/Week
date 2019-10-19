@@ -55,6 +55,16 @@ nginx转发的设置
 
 > https://jingyan.baidu.com/article/da1091fb69f0b7027849d612.html
 
+* np.percentile: 百分位数
+
+分位数是用于衡量数据的位置的量度
+
+1. 用99个数值或99个点，将按大小顺序排列的观测值划分为100个等分，则这99个数值或99个点就称为百分位数，分别以Pl，P2，…，P99代表第1个，第2个，…，第99个百分位数。
+
+2. 中位数是第50百分位数。
+
+> https://baike.baidu.com/item/%E7%99%BE%E5%88%86%E4%BD%8D%E6%95%B0/10064171?fromtitle=percentile&fromid=12015307&fr=aladdin
+
 ## 数据库设计
 
 ```
