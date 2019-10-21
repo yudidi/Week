@@ -18,6 +18,10 @@ https://blog.csdn.net/linzch3/article/details/58584865
 
 1. train test split.
 
+np.random.shuffle(x)与np.random.permutation(x)
+
+> https://www.cnblogs.com/keye/p/10794322.html
+
 ## “介词+关系代词”引导定语从句
 
 ```
