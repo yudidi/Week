@@ -13,6 +13,11 @@ https://blog.csdn.net/linzch3/article/details/58584865
 
 > https://blog.csdn.net/csdn_mr_h/article/details/90414524
 
+
+## Python3入门机器学习 经典算法与应用
+
+1. train test split.
+
 ## “介词+关系代词”引导定语从句
 
 ```
