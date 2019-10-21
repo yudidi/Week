@@ -42,8 +42,7 @@ nginx转发的设置
 
 > https://blog.csdn.net/vernice/article/details/48510709
 
-2. 
-我们管这种从材料列表转为开销表的过程，就叫做一个线性映射
+2. 我们管这种从材料列表转为开销表的过程，就叫做一个线性映射
 
 > https://www.cnblogs.com/mhpp/p/7661068.html
 
@@ -65,8 +64,19 @@ nginx转发的设置
 
 > https://baike.baidu.com/item/%E7%99%BE%E5%88%86%E4%BD%8D%E6%95%B0/10064171?fromtitle=percentile&fromid=12015307&fr=aladdin
 
-## 矩阵基础MOOC
+### 矩阵合并
 
+### Fancy indexing
+
+```
+筛选条件 = [3,5,8] // 向量
+x[筛选条件] 如果筛选条件是正整数,会被当成是索引，然后取出这些位置的值。
+
+筛选条件 = [True,False,True]
+x[筛选条件] 如果筛选条件是bool,如上,则表示x[0]和x[2]取出,x[1]不取出。
+```
+
+> 矩阵基础MOOC
 https://www.icourse163.org/learn/TONGJI-481001?tid=1206883240#/learn/content?type=detail&id=1211787764&cid=1214717041
 
 ## 数据库设计
