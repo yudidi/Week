@@ -9,6 +9,10 @@ A: 为什么方差要平方而不是取绝对值.
 https://blog.csdn.net/linzch3/article/details/58584865
 
 
+## Python __repr__()方法：显示属性
+
+> https://blog.csdn.net/csdn_mr_h/article/details/90414524
+
 ## “介词+关系代词”引导定语从句
 
 ```
