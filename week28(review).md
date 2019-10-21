@@ -7,3 +7,14 @@ A: 为什么方差要平方而不是取绝对值.
 ## numpy使用技巧之数组过滤
 
 https://blog.csdn.net/linzch3/article/details/58584865
+
+
+## “介词+关系代词”引导定语从句
+
+```
+We call one of those sets the training set, on which we learn some properties; we call the other set the testing set, on which we test the learned properties.
+```
+
+> https://scikit-learn.org/stable/tutorial/basic/tutorial.html#machine-learning-the-problem-setting
+
+https://zhuanlan.zhihu.com/p/54412053
