@@ -37,6 +37,12 @@ https://zhuanlan.zhihu.com/p/54412053
 
 * Stages
 
+两个有价值的提示：
+
+如果配置文件中没有定义stages，那么默认情况下的stages属性为build、test和deploy。
+
+如果一个job没有定义stage属性，则它的stage属性默认为test。
+
 * Jobs
 
 > gitlab-ci.yml配置说明（官方文档翻译）
