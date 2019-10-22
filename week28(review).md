@@ -31,3 +31,9 @@ We call one of those sets the training set, on which we learn some properties; w
 > https://scikit-learn.org/stable/tutorial/basic/tutorial.html#machine-learning-the-problem-setting
 
 https://zhuanlan.zhihu.com/p/54412053
+
+
+## CI
+
+gitlab-ci.yml配置说明（官方文档翻译）
+> https://www.szyhf.org/2017/01/16/gitlab-ci-yml%E9%85%8D%E7%BD%AE%E8%AF%B4%E6%98%8E%EF%BC%88%E5%AE%98%E6%96%B9%E6%96%87%E6%A1%A3%E7%BF%BB%E8%AF%91%EF%BC%89/
