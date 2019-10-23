@@ -50,3 +50,18 @@ https://www.szyhf.org/2017/01/16/gitlab-ci-yml%E9%85%8D%E7%BD%AE%E8%AF%B4%E6%98%
 
 
 > https://segmentfault.com/a/1190000019540360
+
+
+## English spoken
+
+1. 浊化 (清辅音在元音后浊化为浊辅音)
+
+open
+
+happen
+
+2. flap T
+
+2元夹T不重读,所以 t->d
+
+
