@@ -66,7 +66,9 @@ td的失去爆破最常见.
 
 1. 2个爆破音连着: tt td dt
 
-2. 爆破音+元音?
+2. 爆破音+xx音?
+
+> https://www.cnblogs.com/god-of-death/p/7283644.html
 
 ### 答疑课20 连读,弱读
 
