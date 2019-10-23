@@ -68,4 +68,12 @@ open,happen
 
 2元夹T不重读,所以 t->d
 
+### 清辅音和浊辅音与爆破音
 
+英语中清辅音有：／p／,／t／,／k／,／f／, ／th／ ,／θ／,／s／,／sh／,／∫／,／t∫／,／ts／,／tr／,／h／
+
+sh pk tfs(θ,sh,∫)(t∫,ts,tr)
+
+浊辅音: 
+
+> https://gss0.baidu.com/7Po3dSag_xI4khGko9WTAnF6hhy/zhidao/wh%3D600%2C800/sign=ed7c035be750352ab1342d0e6373d7ca/e824b899a9014c08b9892449047b02087af4f4a8.jpg
