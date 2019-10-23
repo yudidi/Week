@@ -54,15 +54,15 @@ https://www.szyhf.org/2017/01/16/gitlab-ci-yml%E9%85%8D%E7%BD%AE%E8%AF%B4%E6%98%
 
 ## English spoken
 
+### 答疑课19 失去爆破
+
 ### 答疑课20 连读,弱读
 
-### 答疑课19 失去爆破
+### 答疑课21 浊化
 
 1. 浊化 (清辅音在元音后浊化为浊辅音)
 
-open
-
-happen
+open,happen
 
 2. flap T
 
