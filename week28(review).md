@@ -58,6 +58,8 @@ https://www.szyhf.org/2017/01/16/gitlab-ci-yml%E9%85%8D%E7%BD%AE%E8%AF%B4%E6%98%
 
 * 3组爆破音 pb td kg
 
+嘴唇 舌尖 舌根
+
 td的失去爆破最常见.
 
 ### 答疑课20 连读,弱读
