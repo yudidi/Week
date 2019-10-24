@@ -1,3 +1,12 @@
+## Labels in Go
+
+goto: 
+
+break: 结束标签标记的循环或switch.  fallthrough:继续执行 last case.
+
+continue: 继续标签标记的大循环的下一次循环.
+
+> https://medium.com/golangspec/labels-in-go-4ffd81932339
 
 ## Q:有了方差, 为啥还要标准差
 
