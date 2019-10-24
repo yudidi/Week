@@ -17,7 +17,7 @@
 'distance'：权重和距离成反比，距离预测目标越近具有越高的权重。
 自定义函数：自定义一个函数，根据输入的坐标值返回对应的权重，达到自定义权重的目的。
 
-2. metric：  指定距离度量方法，一般都是使用欧式距离。
+2. metric：  指定距离度量方法，一般都是使用欧式距离。 string or callable, default ‘minkowski’
   'euclidean' ：欧式距离. p无效
   'manhattan'：曼哈顿距离。p无效
   'chebyshev'：切比雪夫距离。p无效
