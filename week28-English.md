@@ -39,3 +39,14 @@ sh pk tfs(θ,sh,∫)(t∫,ts,tr)
 浊辅音: 
 
 > https://gss0.baidu.com/7Po3dSag_xI4khGko9WTAnF6hhy/zhidao/wh%3D600%2C800/sign=ed7c035be750352ab1342d0e6373d7ca/e824b899a9014c08b9892449047b02087af4f4a8.jpg
+
+## “介词+关系代词”引导定语从句
+
+```
+We call one of those sets the training set, on which we learn some properties; we call the other set the testing set, on which we test the learned properties.
+```
+
+> https://scikit-learn.org/stable/tutorial/basic/tutorial.html#machine-learning-the-problem-setting
+
+https://zhuanlan.zhihu.com/p/54412053
+
