@@ -29,3 +29,20 @@
 ```
 > https://scikit-learn.org/stable/modules/generated/sklearn.neighbors.KNeighborsClassifier.html#sklearn.neighbors.KNeighborsClassifier
 > http://www.py3study.com/Article/details/id/3284.html
+
+## CI
+
+* Stages
+
+两个有价值的提示：
+
+如果配置文件中没有定义stages，那么默认情况下的stages属性为build、test和deploy。
+
+如果一个job没有定义stage属性，则它的stage属性默认为test。
+
+* Jobs
+
+> gitlab-ci.yml配置说明（官方文档翻译）
+https://www.szyhf.org/2017/01/16/gitlab-ci-yml%E9%85%8D%E7%BD%AE%E8%AF%B4%E6%98%8E%EF%BC%88%E5%AE%98%E6%96%B9%E6%96%87%E6%A1%A3%E7%BF%BB%E8%AF%91%EF%BC%89/
+
+> https://segmentfault.com/a/1190000019540360
