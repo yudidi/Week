@@ -67,7 +67,7 @@ UPDATE disease_question T1,disease_question T2 SET T2.rank= T1.id  WHERE T1.rank
  
  
  * mysql 字段 is not null 和 字段 !=null
- https://blog.csdn.net/wangzaza/article/details/79484069
+ https://blog.csdn.net/wangzaza/article/details/79484069 [R2:Review2]
  
 
 # Share
