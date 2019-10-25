@@ -1,6 +1,14 @@
 ## MySQL null与not null和null与空值''的区别
 
+1. 我字段类型是not null，为什么我可以插入空值
+
+2. 为毛not null的效率比null高
+
+3. 判断字段不为空的时候，到底要 select * from table where column <> '' 还是要用 select * from table wherecolumn is not null 呢。
+
 > https://segmentfault.com/a/1190000009540449
+
+已经掌握的 TODO
 
 ## Labels in Go
 
