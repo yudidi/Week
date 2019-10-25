@@ -1,3 +1,7 @@
+## MySQL null与not null和null与空值''的区别
+
+> https://segmentfault.com/a/1190000009540449
+
 ## Labels in Go
 
 goto: 
@@ -30,17 +34,6 @@ https://blog.csdn.net/linzch3/article/details/58584865
 np.random.shuffle(x)与np.random.permutation(x)
 
 > https://www.cnblogs.com/keye/p/10794322.html
-
-## “介词+关系代词”引导定语从句
-
-```
-We call one of those sets the training set, on which we learn some properties; we call the other set the testing set, on which we test the learned properties.
-```
-
-> https://scikit-learn.org/stable/tutorial/basic/tutorial.html#machine-learning-the-problem-setting
-
-https://zhuanlan.zhihu.com/p/54412053
-
 
 ## CI
 
