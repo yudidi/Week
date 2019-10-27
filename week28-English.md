@@ -53,7 +53,8 @@ https://zhuanlan.zhihu.com/p/54412053
 
 ## 词汇
 
-* as and when : UK (US if and when)
+### as and when (UK) 
+(US if and when)
 
 at the time that something happens:
  
