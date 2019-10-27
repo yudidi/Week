@@ -10,6 +10,12 @@
 
 以"two sum"为例,讲解算法面试应该注意的地方。
 
+1. 预先思考
+
+2. 边写边讲解
+
+3. 测试你的代码
+
 https://www.youtube.com/watch?v=XKu_SEDAykw
 
 ## KNN
