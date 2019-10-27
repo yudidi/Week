@@ -6,6 +6,10 @@
 
 4.1 two pointers 
 
+Q: 怎么想到的双指针
+
+A:
+
 ```
 int minSubArrayLen(int s, vector<int>& nums)
 {
@@ -28,19 +32,21 @@ int minSubArrayLen(int s, vector<int>& nums)
 ```
 int minSubArrayLen(int s, vector<int>& nums) {
       int l = 0 , r = -1; // nums[l...r]为我们的滑动窗口
-      int sum = 0;
-      int res = nums.size() + 1;
+      int sum = 0; // 存放窗口元素的和
+      int ans = nums.size() + 1; // 最小size，初始值为取不到的一个大值。也可以是INT.MAX
       while(l < nums.size()){   // 窗口的左边界在数组范围内,则循环继续
-          if(r + 1 < nums.size() && sum < s)
+          // 1. 对中间某状态的窗口元素进行增减: 右加或左减
+          if(r + 1 < nums.size() && sum < s) // 右加
               sum += nums[++r];
-          else // r已经到头 或者 sum >= s
+          else // 左减 // r已经到头 或者 sum >= s
               sum -= nums[l++];
+          // 2. 判断窗口元素的和,在满足条件(as/if and when)时,更新ans
           if(sum >= s)
-              res = min(res, r - l + 1);
+              ans = min(ans, r - l + 1);
       }
-      if(res == nums.size() + 1)
+      if(ans == nums.size() + 1)
           return 0;
-      return res;
+      return ans;
   }
 ```
 > https://leetcode.com/problems/minimum-size-subarray-sum/solution/
