@@ -4,8 +4,13 @@
 
 > https://leetcode.com/problems/minimum-size-subarray-sum/solution/
 
+# Share
 
+* How to: Work at Google — Example Coding/Engineering Interview
 
+以"two sum"为例,讲解算法面试应该注意的地方。
+
+https://www.youtube.com/watch?v=XKu_SEDAykw
 
 ## KNN
 
