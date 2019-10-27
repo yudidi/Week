@@ -50,3 +50,13 @@ We call one of those sets the training set, on which we learn some properties; w
 
 https://zhuanlan.zhihu.com/p/54412053
 
+
+## 词汇
+
+* as and when : UK (US if and when)
+
+at the time that something happens:
+ 
+- We don't own a car - we just rent one as and when we need it.
+
+> https://dictionary.cambridge.org/zhs/%E8%AF%8D%E5%85%B8/%E8%8B%B1%E8%AF%AD/as-and-when
