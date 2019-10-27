@@ -4,13 +4,46 @@
 
 * brute force -> better brute force -> bs(TODO) -> 4. two pointers / 滑动窗口
 
+```
+int minSubArrayLen(int s, vector<int>& nums)
+{
+    int n = nums.size();
+    int ans = INT_MAX;
+    for (int i = 0; i < n; i++) {
+        for (int j = i; j < n; j++) { // 查找i开头的subarray
+            int sum = 0;
+            for (int k = i; k <= j; k++) {
+                sum += nums[k];
+            }
+            if (sum >= s) {
+                ans = min(ans, (j - i + 1));
+                break; //Found the smallest subarray with sum>=s starting with index i, hence move to next index // 理解这个很关键,只要找到基于起点i的第一个subarray，就不用再往后加了,因为往右扩展subarray只能获取到size更大的subarray. 此时起点就需要后移了。
+            }
+        }
+    }
+    return (ans != INT_MAX) ? ans : 0;
+}
+```
+
 4.1 two pointers 
 
 Q: 怎么想到的双指针
 
-A:
+A: Until now, we have kept the starting index of subarray fixed, and found the last position. 
+
+目前为止，每趟循环，我们都是把子数组的起点固定的，然后查找子数组的终点。
+
+Instead, we could move the starting index of the current subarray as soon as we know that no better could be done with this index as the starting index. 
+
+我们可以在每趟循环中，移动这个起点，因为我们知道基于该起点的最小subarray就是当前subarray,如果再往右累加，只能找到size更长的subarray，所以需要更换起点了.[PS.这个在brute force有写]
 
 ```
+
+----
+[----]sum[l,i]
+[*---]sum[l+1,i]
+[**--]sum[l+2,i] 减少了重复运算,基于sum[l,i]计算sum[l+x..,i]
+
 int minSubArrayLen(int s, vector<int>& nums)
 {
     int n = nums.size();
@@ -18,10 +51,10 @@ int minSubArrayLen(int s, vector<int>& nums)
     int left = 0;
     int sum = 0;
     for (int i = 0; i < n; i++) {
-        sum += nums[i];
-        while (sum >= s) {
-            ans = min(ans, i + 1 - left);
-            sum -= nums[left++];
+        sum += nums[i]; // 相当于窗口右加
+        while (sum >= s) { 
+            ans = min(ans, i + 1 - left); 
+            sum -= nums[left++]; // 窗口减左
         }
     }
     return (ans != INT_MAX) ? ans : 0;
