@@ -1,7 +1,48 @@
 # Algrithm
 
-查找 和>s的最短连续子数组.
+查找 sum>=s 的最短连续子数组.
 
+* brute force -> better brute force -> bs(TODO) -> 4. two pointers / 滑动窗口
+
+4.1 two pointers 
+
+```
+int minSubArrayLen(int s, vector<int>& nums)
+{
+    int n = nums.size();
+    int ans = INT_MAX;
+    int left = 0;
+    int sum = 0;
+    for (int i = 0; i < n; i++) {
+        sum += nums[i];
+        while (sum >= s) {
+            ans = min(ans, i + 1 - left);
+            sum -= nums[left++];
+        }
+    }
+    return (ans != INT_MAX) ? ans : 0;
+}
+```
+
+4.2 滑动窗口
+```
+int minSubArrayLen(int s, vector<int>& nums) {
+      int l = 0 , r = -1; // nums[l...r]为我们的滑动窗口
+      int sum = 0;
+      int res = nums.size() + 1;
+      while(l < nums.size()){   // 窗口的左边界在数组范围内,则循环继续
+          if(r + 1 < nums.size() && sum < s)
+              sum += nums[++r];
+          else // r已经到头 或者 sum >= s
+              sum -= nums[l++];
+          if(sum >= s)
+              res = min(res, r - l + 1);
+      }
+      if(res == nums.size() + 1)
+          return 0;
+      return res;
+  }
+```
 > https://leetcode.com/problems/minimum-size-subarray-sum/solution/
 
 # Share
