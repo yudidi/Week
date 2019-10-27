@@ -1,6 +1,10 @@
 # Algrithm
 
+查找 和>s的最短连续子数组.
+
 > https://leetcode.com/problems/minimum-size-subarray-sum/solution/
+
+
 
 
 ## KNN
