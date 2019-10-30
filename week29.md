@@ -24,3 +24,10 @@ https://www.kaggle.com/tunguz/pca-nusvc-knn
 > https://baike.baidu.com/item/导数/579188?fr=aladdin#reference-[1]-30958-wrap
 
 > https://www.matongxue.com/columns/4/
+
+
+* 通过导数求函数的最值
+
+先求导，然后让导数等于0，得出可能极值点，然后通过判断导数的正负来判断单调性，最后再得出极值，然后再计算端点值，比较大小，最大就是最大值，最小就是最小值。
+
+> https://blog.csdn.net/ccnt_2012/article/details/81127117
