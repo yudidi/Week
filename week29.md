@@ -39,3 +39,13 @@ https://www.kaggle.com/tunguz/pca-nusvc-knn
 * 在线多项式曲线拟合 / 在线计算拟合曲线函数 
 
 > http://www.atool9.com/fitted_curve.php
+
+
+## Share
+
+* 初级程序员经常犯的错误有那些？
+
+git blame
+
+> https://www.zhihu.com/question/342567719/answer/828021658
+
