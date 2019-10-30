@@ -34,6 +34,7 @@ https://www.kaggle.com/tunguz/pca-nusvc-knn
 
 > https://blog.csdn.net/ccnt_2012/article/details/81127117
 
+> https://baike.baidu.com/item/%E5%81%8F%E5%AF%BC%E6%95%B0/5536984?fr=aladdin
 
 
 
