@@ -41,6 +41,14 @@ https://www.kaggle.com/tunguz/pca-nusvc-knn
 > http://www.atool9.com/fitted_curve.php
 
 
+* 概率密度函数在某一点的值有什么意义？
+
+> https://www.zhihu.com/question/23237834/answer/243561847
+
+
+* 怎样在30天内学（补）好概率论与数理统计？ - 帝辛的回答 - 知乎
+https://www.zhihu.com/question/21217268/answer/53959235
+
 ## Share
 
 * 初级程序员经常犯的错误有那些？
