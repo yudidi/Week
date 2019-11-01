@@ -1,10 +1,7 @@
-
 Algorithm、Review、Tip、Share 简称ARTS
 1.每周至少做一个 leetcode 的算法题 2.阅读并点评至少一篇英文技术文章 3.学习至少一个技术技巧 4.分享一篇有观点和思考的技术文章
 
 # Algorithm
-
-
 
 # 机器学习
 
@@ -60,6 +57,14 @@ https://www.zhihu.com/question/21217268/answer/53959235
 
 * 如何区分条件概率和联合概率？ - 木夏的回答 - 知乎
 https://www.zhihu.com/question/303814070/answer/541471292
+
+## 多元线性回归
+
+* 把循环求和的运算 转化为等价的 向量化矩阵运算，可以大幅提高运算销量.
+
+向量A的点乘 A·A == 矩阵乘法 A(T)·A == 求和(a(i))
+
+> https://coding.imooc.com/learn/questiondetail/149539.html
 
 ## Share
 
