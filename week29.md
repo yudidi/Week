@@ -65,6 +65,11 @@ https://www.zhihu.com/question/303814070/answer/541471292
 
 > https://coding.imooc.com/learn/questiondetail/149539.html
 
+
+* 课程学习后的实例练习
+
+http://coding.imooc.com/learn/questiondetail/47909.html
+
 ## Share
 
 * 初级程序员经常犯的错误有那些？
