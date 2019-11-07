@@ -4,7 +4,7 @@
 
 * "Prepared statement contains too many placeholders"
 
-* 事务的作用语句
+## 事务的作用语句
 
 ```
 COMMIT / ROLLBACK这两个命令用的时候要小心。
@@ -13,10 +13,13 @@ DML语句执行完之后，处理的数据，都会放在回滚段中（除了 S
 ```
 > https://blog.csdn.net/chenlycly/article/details/21302073
 
-* mysql 锁表的情况
+## mysql 锁表的情况
 
 > https://blog.csdn.net/qq_27409289/article/details/85726453
 
 > https://www.cnblogs.com/paul8339/p/6877729.html
 
-* mysql事务太长未提交，是否导致问题
+## mysql事务太长未提交，是否导致问题
+
+
+# 开发和上线流程中的, 分支管理
