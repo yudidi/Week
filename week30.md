@@ -31,3 +31,9 @@ DML语句执行完之后，处理的数据，都会放在回滚段中（除了 S
 ## nginx做反向代理
 
 > https://www.jianshu.com/p/0b6f80949503
+
+* 正向代理代理客户端，反向代理代理服务器。
+
+正向代理 -> 客户端 =...=> 反向代理 -> 服务器
+
+> https://www.cnblogs.com/ysocean/p/9392908.html#_label2
