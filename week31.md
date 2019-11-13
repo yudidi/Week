@@ -21,8 +21,13 @@ ELK：kibana使用的lucene查询语法
 
 懒加载
 
+## Golang小数float64在实际工程中加减乘除的精度问题
+
+> https://blog.csdn.net/muhongzhong/article/details/88880359
+
 # 英语语法
 
 这里为什么不直接用 which 而用 in which 呢？
 
 > http://ask.yygrammar.com/q-4831.html
+
