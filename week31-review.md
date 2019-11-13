@@ -27,3 +27,24 @@
 定语从句中的关系词分为两类：关系代词和关系副词。
 
 > https://www.zhihu.com/question/342549456/answer/804129411
+
+
+# golang
+
+reflect: call of reflect.Value.Set on zero Value
+
+当字段是NULL或者""空时，都会导致反射问题
+
+```
+diagnosis := []*struct {
+		Id               int64           `json:"id"`
+		DiagnosisContent json.RawMessage `json:"diagnosis_content"`
+	}{}
+if err := this.conn.Query(
+			&diagnosis,
+			`SELECT id,diagnosis_content FROM insure_family_member`+memberIdsIn.Sql(),
+			memberIdsIn.Bind()...,
+		); err != nil {
+			return http.STATUS_ERROR_DB
+		}
+```
