@@ -31,7 +31,7 @@
 
 # golang
 
-reflect: call of reflect.Value.Set on zero Value
+* reflect: call of reflect.Value.Set on zero Value
 
 当字段是NULL或者""空时，都会导致反射问题
 
@@ -48,3 +48,9 @@ if err := this.conn.Query(
 			return http.STATUS_ERROR_DB
 		}
 ```
+
+* mysql设置text字段为not null，并且没有默认值，插入报错：doesn't have a default value
+
+2、如果字段为text,则既不需要设置not null,也不需要手动设置default 的值
+
+> https://blog.csdn.net/LJFPHP/article/details/81939189
