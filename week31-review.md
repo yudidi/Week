@@ -8,10 +8,22 @@
 
 > https://github.com/yudidi/Week/blob/master/week15.md#map%E7%9A%84key%E5%A6%82%E6%9E%9C%E6%98%AFinterface%E6%98%AF%E4%BB%80%E4%B9%88%E6%84%8F%E6%80%9D 
 
-# 定语从句和状语从句的区别
+# 定语和状语
+
+## 定语和状语的概念是怎么出现的
+
+句子中除了五大基本句型的组成部分，还多出了一部分，这些就是定语或状语
+
+## 定语从句和状语从句的区别
 
 * 定语，就是限定和或修饰名词、代词用的。
 
 * 状语，就是用来修饰动词、形容词、副词或者是整个句子的。
 
 > https://zhidao.baidu.com/question/585627796724291645.html
+
+* Q: in which为什么能代替where，还有什么of which之类的为什么能被替换?
+
+定语从句中的关系词分为两类：关系代词和关系副词。
+
+> https://www.zhihu.com/question/342549456/answer/804129411
