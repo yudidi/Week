@@ -25,6 +25,10 @@ ELK：kibana使用的lucene查询语法
 
 > https://blog.csdn.net/muhongzhong/article/details/88880359
 
+* golang 浮点类型数据精度损失问题的解决方案
+
+> https://blog.csdn.net/mario08/article/details/80682093
+
 # 英语语法
 
 这里为什么不直接用 which 而用 in which 呢？
