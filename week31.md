@@ -11,7 +11,7 @@ ELK：kibana使用的lucene查询语法
 > https://segmentfault.com/a/1190000002972420
 
 
-# 数据同步的实际
+# 数据同步的2种情况
 
 1. 由程序自动同步
 
@@ -20,3 +20,9 @@ ELK：kibana使用的lucene查询语法
 2. 由用户触发后，才同步。 保证最终一致性。
 
 懒加载
+
+# 英语语法
+
+这里为什么不直接用 which 而用 in which 呢？
+
+> http://ask.yygrammar.com/q-4831.html
