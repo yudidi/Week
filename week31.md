@@ -35,9 +35,21 @@ ELK：kibana使用的lucene查询语法
 
 > http://ask.yygrammar.com/q-4831.html
 
-# Join on时可以指定条件
+# sql中join on两个条件怎么写
+
+```
+SELECT *
+  FROM 表1
+  LEFT JOIN 表2 
+    ON 表1.a=表2.a AND 表1.b=表2.b
+ WHERE 条件
+```
 
 ```
 LEFT JOIN insure_project ON insure_project.insure_id = insure.id AND insure_project.name = product_category.insure_amount_project 
 WHERE ...
 ```
+
+* sql中left join on 多个条件需要特殊注意之处
+
+> https://blog.csdn.net/dax1n/article/details/81590910
