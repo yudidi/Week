@@ -54,3 +54,12 @@ if err := this.conn.Query(
 2、如果字段为text,则既不需要设置not null,也不需要手动设置default 的值
 
 > https://blog.csdn.net/LJFPHP/article/details/81939189
+
+
+# 业务架构设计
+
+* 有多少人在滥用 service+serviceImpl，又有多少人在误用myBatis
+https://www.iteye.com/blog/linsky328-2408997
+
+* DO、DTO和VO分层设计的好处
+https://www.cnblogs.com/yueguanguanyun/p/9355746.html
