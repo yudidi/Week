@@ -35,3 +35,9 @@ ELK：kibana使用的lucene查询语法
 
 > http://ask.yygrammar.com/q-4831.html
 
+# Join on时可以指定条件
+
+```
+LEFT JOIN insure_project ON insure_project.insure_id = insure.id AND insure_project.name = product_category.insure_amount_project 
+WHERE ...
+```
