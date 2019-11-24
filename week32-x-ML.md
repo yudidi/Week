@@ -12,3 +12,8 @@ https://blog.csdn.net/qq_20412595/article/details/81409744
 向量化编程的总结记录
 
 https://zhuanlan.zhihu.com/p/26989675
+
+
+复合函数求导方法
+
+> https://www.jianshu.com/p/29a9c2c424e5
