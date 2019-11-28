@@ -24,3 +24,26 @@ if userCode == "" {
 			userId,
 		)
 ```
+
+# mysql保存不了emoji表情
+
+bug:
+
+1. mysql保存emoji表情,utf8mb4保存不了表情的问题
+2. 用户昵称中的emoji编码在序列化之后,保存到数据库中会被截断
+
+```
+{"user_id":"15283","nickname":"
+```
+
+原因: mysql数据库的默认字符集utf8,只能存储3个字节的数据,标准的emoji表情是4个字节,所以要使用utf8mb4兼容四个字节
+
+解决方案:
+1. 将表字段字符集设置成utf8mb4 
+2. 数据库连接也需要改为utf8mb4
+
+```
+alter database 库名 character set utf8mb4 collate utf8mb4_general_ci
+```
+
+> https://www.cnblogs.com/houss/p/11131935.html
