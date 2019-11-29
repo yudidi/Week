@@ -51,6 +51,8 @@ alter database 库名 character set utf8mb4 collate utf8mb4_general_ci
 
 # golang channel 任务队列
 
+TODO
+
 ```
 nextSig := make(chan bool, 1)
 nextSig <- true
@@ -66,3 +68,7 @@ for {
 	}
 }
 ```
+
+# golang 增加5秒时间 时间操作
+
+time.Now().Add(time.Duration(i*5)*time.Second)
