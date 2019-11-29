@@ -47,3 +47,22 @@ alter database 库名 character set utf8mb4 collate utf8mb4_general_ci
 ```
 
 > https://www.cnblogs.com/houss/p/11131935.html
+
+
+# golang channel 任务队列
+
+```
+nextSig := make(chan bool, 1)
+nextSig <- true
+for {
+	select {
+	case <-nextSig:
+		if this.doMessagePush() > 0 {
+			nextSig <- true
+		} else {
+			time.Sleep(10 * time.Second)
+			nextSig <- true
+		}
+	}
+}
+```
