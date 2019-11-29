@@ -1,5 +1,3 @@
-
-
 # mysql LIKE的字符串拼接
 
 ```
@@ -7,7 +5,6 @@ SELECT xxxx FROM t
 WHERE
  is_displayed = TRUE AND case_code LIKE ? [%7%]
  ```
-
 # mysql字段为NULL和golang结构体字段为json.RawMessage
 
 1. NULL字段反射到json.RawMessage会导致panic，只能反射到string [R2]
@@ -48,7 +45,6 @@ alter database 库名 character set utf8mb4 collate utf8mb4_general_ci
 
 > https://www.cnblogs.com/houss/p/11131935.html
 
-
 # golang channel 任务队列
 
 TODO
@@ -72,3 +68,8 @@ for {
 # golang 增加5秒时间 时间操作
 
 time.Now().Add(time.Duration(i*5)*time.Second)
+
+
+# golang 网络问题
+
+* 这个异常"net/http: request canceled while waiting for connection (Client.Timeout exceeded while awaiting headers" 是什么场景下产生的呢
