@@ -24,6 +24,10 @@ if userCode == "" {
 
 # mysql保存不了emoji表情
 
+## MySQL修改表、字段、库的字符集及字符集说明
+
+> https://www.cnblogs.com/qiumingcheng/p/10336170.html
+
 bug:
 
 1. mysql保存emoji表情,utf8mb4保存不了表情的问题
@@ -35,13 +39,16 @@ bug:
 
 原因: mysql数据库的默认字符集utf8,只能存储3个字节的数据,标准的emoji表情是4个字节,所以要使用utf8mb4兼容四个字节
 
-解决方案:
+解决方案1:
 1. 将表字段字符集设置成utf8mb4 
 2. 数据库连接也需要改为utf8mb4
 
 ```
-alter database 库名 character set utf8mb4 collate utf8mb4_general_ci
+DATABASE_DSN=root:password@tcp(IP:port)/db?charset=utf8mb4
 ```
+
+解决方案2:
+把数据库表设置为字符集设置成utf8mb4 
 
 > https://www.cnblogs.com/houss/p/11131935.html
 
