@@ -73,3 +73,7 @@ time.Now().Add(time.Duration(i*5)*time.Second)
 # golang 网络问题
 
 * 这个异常"net/http: request canceled while waiting for connection (Client.Timeout exceeded while awaiting headers" 是什么场景下产生的呢
+
+# MySQL的字符集与字符排序规则
+https://blog.csdn.net/Strong997/article/details/99618372
+https://www.cnblogs.com/kerrycode/p/11170266.html
