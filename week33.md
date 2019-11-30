@@ -84,3 +84,17 @@ time.Now().Add(time.Duration(i*5)*time.Second)
 # MySQL的字符集与字符排序规则
 https://blog.csdn.net/Strong997/article/details/99618372
 https://www.cnblogs.com/kerrycode/p/11170266.html
+
+# 彻底理解cookie，session，token
+
+1. 无状态 
+Q: 如何做到无状态,stateless. 做到不存储session,实现身份验证。
+A: `发令牌(token)`
+1. 在服务端生成token:对用户标记(如,user_id)签名
+2. 通过http header发放给用户
+3. 用户请求的header中带着这个token访问服务器
+4. 服务验证token,验证通过则视为登录过,否则认为用户没有认证,需要重新登录
+
+这样一来,我就不保存session id了,我只是生成token,然后验证token,我用我的`CPU计算时间获取了我的session 存储空间`
+
+> https://www.cnblogs.com/moyand/p/9047978.html
