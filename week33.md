@@ -97,4 +97,6 @@ A: `发令牌(token)`
 
 这样一来,我就不保存session id了,我只是生成token,然后验证token,我用我的`CPU计算时间获取了我的session 存储空间`
 
+`空间换时间`
+
 > https://www.cnblogs.com/moyand/p/9047978.html
