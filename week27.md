@@ -66,7 +66,7 @@ nginx转发的设置
 
 ### 矩阵合并
 
-### Fancy indexing
+### Fancy indexing [R2]
 
 ```
 筛选条件 = [3,5,8] // 向量
