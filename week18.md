@@ -22,7 +22,7 @@ https://cloud.tencent.com/developer/article/1403056
 
 > https://www.jianshu.com/p/e829f78efc20 如何阅读复杂项目的源码
 
-* MySQL 字符串截取函数：left(), right(), substring(), substring_index()。
+* MySQL 字符串截取函数：left(), right(), substring(), substring_index()。 [R2]
 
 还有 mid(), substr()。其中，mid(), substr() 等价于 substring() 函数，substring() 的功能非常强大和灵活。
 
