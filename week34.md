@@ -16,3 +16,8 @@ IF(expr1,expr2,expr3)，如果expr1的值为true，则返回expr2的值，如果
 ELT()函数
 
 > https://blog.csdn.net/rocling/article/details/82147981
+
+
+## 区块链如何运用merkle tree验证交易真实性
+
+> https://www.tangshuang.net/4117.html
