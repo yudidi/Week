@@ -74,7 +74,8 @@ A: 接口的幂等性.
 
 https://blog.csdn.net/u011635492/article/details/81058153
 
-* MySQL字段属性应该尽量设置为NOT NULL
+* MySQL字段属性应该尽量设置为NOT NULL [R2]
+
 https://www.cnblogs.com/liaokaichang/p/7879010.html
 
 
