@@ -13,4 +13,6 @@ insert操作且不给该字段插值的时候，数据库判断该字段不能�
 
 > https://blog.csdn.net/u011866460/article/details/40783527
 
-# Q: 什么情况要设置not null
+# MySQL字段属性应该尽量设置为NOT NULL
+
+https://github.com/yudidi/Week/blob/master/week12.md
