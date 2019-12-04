@@ -21,3 +21,12 @@ ELT()函数
 ## 区块链如何运用merkle tree验证交易真实性
 
 > https://www.tangshuang.net/4117.html
+
+
+## mysql 中int类型字段unsigned和signed的探索
+
+* 探索一：正负数问题
+
+* 探索二：性能问题
+
+> https://www.cnblogs.com/wangzhongqiu/p/6424827.html
