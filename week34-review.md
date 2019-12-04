@@ -15,4 +15,4 @@ insert操作且不给该字段插值的时候，数据库判断该字段不能�
 
 # MySQL字段属性应该尽量设置为NOT NULL
 
-https://github.com/yudidi/Week/blob/master/week12.md
+https://github.com/yudidi/Week/blob/master/week12.md#mysql%E5%AD%97%E6%AE%B5%E5%B1%9E%E6%80%A7%E5%BA%94%E8%AF%A5%E5%B0%BD%E9%87%8F%E8%AE%BE%E7%BD%AE%E4%B8%BAnot-null-r2
