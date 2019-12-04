@@ -50,7 +50,9 @@ INSERT INTO  test4(id,cnt) VALUES
   ON DUPLICATE KEY UPDATE id = VALUES(id), cnt= VALUES(cnt)+  cnt 
 ```
 
-## mysql中int(3)与int(11)有什么区别吗？
+## mysql中int(3)与int(11)有什么区别吗？[R2]
+
+* 要查看出不同效果记得在`创建类型的时候加zerofill`这个值，表示用0填充，否则看不出效果的。
 
 > https://www.cnblogs.com/yaowen/p/8862108.html
 
