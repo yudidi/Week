@@ -30,3 +30,6 @@ ELT()函数
 * 探索二：性能问题
 
 > https://www.cnblogs.com/wangzhongqiu/p/6424827.html
+
+
+## Q: mysql NOT NULL 和 DEFAULT 0 有必要同时加上吗?
