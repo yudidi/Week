@@ -65,7 +65,7 @@ https://blog.golang.org/using-go-modules
 根据主键或唯一关键字，检测到重复时，先删除旧行，再插入新到一行，所以id会变化。
 PS: 因为id可能被其他业务依赖，如此会导致问题，所以MYSQL不要用REPLACE，https://yq.aliyun.com/articles/627744
 
-3. 方案三：ON DUPLICATE KEY UPDATE
+3. 方案三：ON DUPLICATE KEY UPDATE [R2]
 
  在实际应用中，经常碰到导入数据的功能，`当导入的数据不存在时则进行添加，有修改时则进行更新`，
 在刚碰到的时候，第一反应是将其实现分为两块，分别是判断增加，判断更新，后来发现在mysql中有
