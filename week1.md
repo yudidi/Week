@@ -57,7 +57,7 @@ https://blog.golang.org/using-go-modules
 # Tip
 **MySql避免重复插入记录方法(ignore,Replace,ON DUPLICATE KEY UPDATE)**
 
-1. 案一：使用ignore关键字
+1. 案一：使用ignore关键字 [R2]
 如果是用主键primary或者唯一索引unique区分了记录的唯一性,避免重复插入记录可以使用：
 
 
