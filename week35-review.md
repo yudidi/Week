@@ -19,3 +19,14 @@ I would recommend using INSERT...ON DUPLICATE KEY UPDATE.
 # 在InnoDB中使用INSERT IGNORE来避免自动递增的漏洞
 
 > https://www.oschina.net/question/207055_33444
+
+# 自增锁引发的悲剧
+
+* 和auto_increment相关的insert种类
+
+1. INSERT-like
+2. simple insert
+3. Bulk inserts
+4. Mixed-mode inserts
+
+> https://keithlan.github.io/2017/03/03/auto_increment_lock/
