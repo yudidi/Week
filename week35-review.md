@@ -30,3 +30,6 @@ I would recommend using INSERT...ON DUPLICATE KEY UPDATE.
 4. Mixed-mode inserts
 
 > https://keithlan.github.io/2017/03/03/auto_increment_lock/
+
+# InnoDB AUTO_INCREMENT Lock Modes
+https://dev.mysql.com/doc/refman/5.7/en/innodb-auto-increment-handling.html#innodb-auto-increment-lock-modes
