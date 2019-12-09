@@ -7,3 +7,11 @@ the rows with invalid data that cause the error `are ignored` and the rows with 
 * MySQL `truncated` data before inserting it into the tokens table
 
 http://www.mysqltutorial.org/mysql-insert-ignore/
+
+
+# “INSERT IGNORE” vs “INSERT … ON DUPLICATE KEY UPDATE”
+
+I would recommend using INSERT...ON DUPLICATE KEY UPDATE.
+
+
+> https://stackoverflow.com/questions/548541/insert-ignore-vs-insert-on-duplicate-key-update
