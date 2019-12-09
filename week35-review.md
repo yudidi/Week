@@ -32,4 +32,12 @@ I would recommend using INSERT...ON DUPLICATE KEY UPDATE.
 > https://keithlan.github.io/2017/03/03/auto_increment_lock/
 
 # InnoDB AUTO_INCREMENT Lock Modes
+
+Q: Tx2的自增id有3种可能的情况,Tx2 > Tx1 // Tx2< Tx1 // minTx1<Tx2<Tx1max，是哪种?
+
+```
+Tx1: INSERT INTO t1 (c2) SELECT 1000 rows from another table ...
+Tx2: INSERT INTO t1 (c2) VALUES ('xxx');
+```
+
 https://dev.mysql.com/doc/refman/5.7/en/innodb-auto-increment-handling.html#innodb-auto-increment-lock-modes
