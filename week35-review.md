@@ -15,3 +15,7 @@ I would recommend using INSERT...ON DUPLICATE KEY UPDATE.
 
 
 > https://stackoverflow.com/questions/548541/insert-ignore-vs-insert-on-duplicate-key-update
+
+# 在InnoDB中使用INSERT IGNORE来避免自动递增的漏洞
+
+> https://www.oschina.net/question/207055_33444
