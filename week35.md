@@ -6,7 +6,7 @@
 
 对于数据连续性要求低的情况，可以将多个删除操作集中到一次进行，被删除的数据标记删除，新数据从数组尾部扩展，直到数组没有空间，将标记删除的数据一次性清除，其余数据一次性前移相应位数。
 
-[动画示意图]!https://user-gold-cdn.xitu.io/2019/9/9/16d138d1c9a87e55?imageslim
+![动画示意图](https://user-gold-cdn.xitu.io/2019/9/9/16d138d1c9a87e55?imageslim)
 
 > https://www.lt-tree.com/2019/06/20/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%E4%B9%8B%E7%BE%8E1_%E6%95%B0%E7%BB%84&%E9%93%BE%E8%A1%A8/
 
