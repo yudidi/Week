@@ -19,3 +19,10 @@ V8和JVM中的标记清除算法也是基于此思想,标记清除算法分为�
 ```
 
 > https://juejin.im/post/5d75a5266fb9a06b1a56b137#heading-9
+
+
+# 链表
+
+## 206. Reverse Linked List
+
+> https://leetcode.com/problems/reverse-linked-list/
