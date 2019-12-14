@@ -17,12 +17,29 @@
 前端框架的虚拟DOM就是将对DOM的大量操作先储存在差异队列中,然后再一次性更新,避免了DOM的回流和重绘.
 V8和JVM中的标记清除算法也是基于此思想,标记清除算法分为两个阶段,标记阶段对访问到的对象都打上一个标识,在清除阶段发现某个对象没有标记则进行回收.
 ```
-
 > https://juejin.im/post/5d75a5266fb9a06b1a56b137#heading-9
 
-
 # 链表
-
 ## 206. Reverse Linked List
-
+```
+//      1->2->3->null
+//null<-1<-2<-3
+// cur:当前处理的节点,cur.Next需要指向其前一个元素
+// next:保存子链
+// pre:保存前一个元素
+// 
+// Test Cases: 1. NULL 2.One Node 3. Two Nodes
+func reverseList(head *ListNode) *ListNode {
+    var pre *ListNode 
+    cur := head
+    for cur != nil{
+        next := cur.Next // save next
+        cur.Next = pre // recerse cur
+        // update pointers for next iterate
+        pre = cur
+        cur = next
+    }
+    return pre
+}
+```
 > https://leetcode.com/problems/reverse-linked-list/
