@@ -43,3 +43,8 @@ func reverseList(head *ListNode) *ListNode {
 }
 ```
 > https://leetcode.com/problems/reverse-linked-list/
+
+# Awesome Go Interview Questions and Answers
+
+
+
