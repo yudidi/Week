@@ -44,7 +44,12 @@ func reverseList(head *ListNode) *ListNode {
 ```
 > https://leetcode.com/problems/reverse-linked-list/
 
-# Awesome Go Interview Questions and Answers
+# Go Interview QA
 
+## schedule
 
+## interface
 
+# 定语从句——介词＋which如何快速理解？
+为此，我们总结出一套3步处理“介词＋which”定语从句的方法：替换，带入，在一起。
+> http://www.360doc.com/content/18/0213/10/50323900_729728014.shtml
