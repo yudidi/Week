@@ -20,6 +20,11 @@ type Closure struct {
 ```
 > https://blog.csdn.net/skh2015java/article/details/87921438
 
+Go 语言闭包详解
+
+> https://www.sulinehk.com/post/golang-closure-details/
+
+
 # go语言调度器源代码情景分析
 
 ## 汇编指令
