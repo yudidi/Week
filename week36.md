@@ -1,0 +1,47 @@
+
+# Golang中闭包的实现原理
+
+1. 
+
+2. 识别出变量需要在堆上分配，是由编译器的一种叫escape analyze的技术实现的。如果输入命令：
+
+3. 回到闭包的实现来，前面说过，闭包是函数和它所引用的环境。那么是不是可以表示为一个结构体呢：
+```
+type Closure struct {
+    F func() int
+    i *int
+}
+```
+
+* 小结
+1. Go语言支持闭包
+
+2. Go语言能通过escape analyze识别出变量的作用域，自动将变量在堆上分配。将闭包环境变量在堆上分配是Go实现闭
+
+包的基础。
+
+3. 返回闭包时并不是单纯返回一个函数，而是返回了一个结构体，记录下函数返回地址和引用的环境中的变量地址。
+
+> https://blog.csdn.net/skh2015java/article/details/87921438
+
+# go语言调度器源代码情景分析
+
+## 汇编指令
+
+https://mp.weixin.qq.com/s?__biz=MzU1OTg5NDkzOA==&mid=2247483693&idx=1&sn=e5398ae82e2f3484bea5e8858b1a9cd7&scene=19#wechat_redirect
+
+> http://www.ruanyifeng.com/blog/2018/01/assembly-language-primer.html
+
+## 函数调用过程
+
+* CPU是如何从调用者跳转到被调用函数执行的？
+
+* 参数是如何从调用者传递给被调用函数的？
+
+* 函数局部变量所占内存是怎么在栈上分配的？
+
+* 返回值是如何从被调用函数返回给调用者的？
+
+* 函数执行完成之后又需要做哪些清理工作？
+
+> https://mp.weixin.qq.com/s?__biz=MzU1OTg5NDkzOA==&mid=2247483723&idx=1&sn=772960aa0d5ae4aa6921e9ff43fcb99f&scene=19#wechat_redirect
