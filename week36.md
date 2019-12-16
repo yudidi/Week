@@ -10,6 +10,7 @@
 2. 返回闭包时并不是单纯返回一个函数，而是返回了一个结构体，记录下函数返回地址和引用的环境中的变量地址。
 
 3. 闭包的实现
+
 前面说过，闭包是函数和它所引用的环境。那么是不是可以表示为一个结构体呢:
 ```
 type Closure struct {
@@ -17,8 +18,6 @@ type Closure struct {
     i *int
 }
 ```
-
-
 > https://blog.csdn.net/skh2015java/article/details/87921438
 
 # go语言调度器源代码情景分析
