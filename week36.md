@@ -27,13 +27,15 @@ Go 语言闭包详解
 
 # go语言调度器源代码情景分析
 
-## 汇编指令
+## 预备知识
+
+### 汇编指令
 
 https://mp.weixin.qq.com/s?__biz=MzU1OTg5NDkzOA==&mid=2247483693&idx=1&sn=e5398ae82e2f3484bea5e8858b1a9cd7&scene=19#wechat_redirect
 
 > http://www.ruanyifeng.com/blog/2018/01/assembly-language-primer.html
 
-## 函数调用过程
+### 函数调用过程
 
 * CPU是如何从调用者跳转到被调用函数执行的？
 
@@ -46,3 +48,10 @@ https://mp.weixin.qq.com/s?__biz=MzU1OTg5NDkzOA==&mid=2247483693&idx=1&sn=e5398a
 * 函数执行完成之后又需要做哪些清理工作？
 
 > https://mp.weixin.qq.com/s?__biz=MzU1OTg5NDkzOA==&mid=2247483723&idx=1&sn=772960aa0d5ae4aa6921e9ff43fcb99f&scene=19#wechat_redirect
+
+### Go语言调度器源代码情景分析之十：线程本地存储
+go的runtime是如何利用线程本地存储来把正在运行的goroutine和工作线程关联在一起的。
+
+## 正式分析
+
+
