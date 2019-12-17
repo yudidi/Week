@@ -68,5 +68,13 @@ In Go 1.11, the debug information is compressed for purpose of reduce binary siz
 ```
 export GOFLAGS="-ldflags=-compressdwarf=false"
 ```
+
+不执行这个环境变量,会导致gdb读取不到压缩的debug信息
+
+```
+Reading symbols from main...
+(No debugging symbols found in main)
+Loading Go Runtime support.
+```
 > https://stackoverflow.com/questions/52534287/debug-go-program-with-gdb-on-macos
 
