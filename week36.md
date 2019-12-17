@@ -54,6 +54,7 @@ go的runtime是如何利用线程本地存储来把正在运行的goroutine和�
 
 ## 正式分析
 
+* Mac设置gbd
+> https://pan.wps.cn/l/sAxfWHLi1
 
-* MAC上使用gdb(完美解决)
-> https://blog.csdn.net/github_33873969/article/details/78511733
+
