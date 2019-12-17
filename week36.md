@@ -78,13 +78,24 @@ Loading Go Runtime support.
 ```
 > https://stackoverflow.com/questions/52534287/debug-go-program-with-gdb-on-macos
 
+## gdb编译和调试
+
+```
+go build -gcflags "-N -l" -o xxx xxx.go
+b main.main
+// optional: set disassembly-flavor intel
+disass main.main
+```
+> https://favoorr.github.io/2017/02/26/gdb-trace-go-function-call/
+
 ## Linux中修改环境变量及生效方法（永久、临时）环境变量查看
 
 1. 在/etc/profile文件中添加变量【对所有用户生效（永久的）】  
 
 2. 在用户目录下的.bash_profile文件中增加变量【对单一用户生效（永久的）】
 要让刚才的修改马上生效，需要在用户目录下执行以下代码:
-# source .bash_profile  
+
+source .bash_profile  
 
 3. 直接运行export命令定义变量【只对当前shell（BASH）有效（临时的）】  
 
