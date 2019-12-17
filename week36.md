@@ -54,9 +54,19 @@ go的runtime是如何利用线程本地存储来把正在运行的goroutine和�
 
 ## 正式分析
 
-* Mac设置gbd
+## Mac设置gbd
+
 > https://pan.wps.cn/l/sAxfWHLi1
 
-gdb调试命令
+* gdb调试命令
 > https://www.cnblogs.com/wuyuegb2312/archive/2013/03/29/2987025.html
+
+* debug信息被压缩,在mac不可被识别. 需要设置环境变量，设置为不压缩
+
+In Go 1.11, the debug information is compressed for purpose of reduce binary size, and gdb on the Mac does not understand compressed DWARF. 
+
+```
+export GOFLAGS="-ldflags=-compressdwarf=false"
+```
+> https://stackoverflow.com/questions/52534287/debug-go-program-with-gdb-on-macos
 
