@@ -90,3 +90,6 @@ Loading Go Runtime support.
 
 > https://blog.csdn.net/u011630575/article/details/49839893
 
+Mac OS X配置环境变量
+
+> https://www.jianshu.com/p/7e30b7b7ee48
