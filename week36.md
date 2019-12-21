@@ -1,6 +1,10 @@
 # Algorithm
 
-> https://leetcode.com/problems/merge-two-sorted-lists/
+## 面试题3：数组中重复的数字
+
+关键：每个位置放置的数字与下标对应相等
+
+## https://leetcode.com/problems/merge-two-sorted-lists/
 
 # Golang中闭包的实现原理
 
