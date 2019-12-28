@@ -13,8 +13,17 @@ command-line-arguments
 
 
 ## docker 安装redis 以及配置连接
+
 https://juejin.im/post/5ca59dece51d4508b32a1292
 
+四个配置需要处理好,否则idea程序连不上
+
+```
+bind
+protected-mode
+requirepass
+daemonize yes 
+```
 
 ## redis clients
 
