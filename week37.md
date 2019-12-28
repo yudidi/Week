@@ -26,5 +26,12 @@ https://redis.io/clients#go
 https://blog.csdn.net/ToraNe/article/details/102730379
 
 Telnet测试自己写的TCP服务器
-
 https://blog.csdn.net/asia66/article/details/81114721
+
+```
+(base) didis-mbp:tmp didiyu$ docker exec -it redis /bin/bash
+OCI runtime exec failed: exec failed: container_linux.go:344: starting container process caused "exec: \"/bin/bash\": stat /bin/bash: no such file or directory": unknown
+(base) didis-mbp:tmp didiyu$ docker exec -it redis /bin/sh
+```
+
+> https://blog.csdn.net/a19891024/article/details/80666353
