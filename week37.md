@@ -25,6 +25,8 @@ requirepass
 daemonize yes 
 ```
 
+* redis.conf配置有误,使用默认配置反而idea可以成功连接
+
 ## redis clients
 
 https://redis.io/clients#go
